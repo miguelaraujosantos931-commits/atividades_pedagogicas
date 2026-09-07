@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mundo Pequenino — Atividades de Caligrafia e Alinhavo para Imprimir</title>
-<meta name="description" content="PDF de atividades de caligrafia e alinhavo prontas para imprimir. Baixe agora e use hoje mesmo com seus filhos ou alunos. Apenas R$10.">
+<title>Mundo Pequenino — Caderno de Caligrafia e Atividades para Imprimir</title>
+<meta name="description" content="Caderno de atividades de caligrafia em PDF: alfabeto, sílabas, números, tabuada, formação de palavras, contornar e colorir. Baixe agora e imprima hoje mesmo. Apenas R$10.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -260,7 +260,7 @@
     z-index:3;
     display:flex;
     flex-direction:column;
-    gap:14px;
+    gap:12px;
   }
   .page-front .tag{
     align-self:flex-start;
@@ -273,7 +273,7 @@
     border-radius:100px;
   }
   .trace-line{
-    height:26px;
+    height:24px;
     position:relative;
   }
   .trace-line::before{
@@ -285,20 +285,26 @@
   .trace-line::after{
     content:"a b c";
     font-family:'Baloo 2', sans-serif;
-    font-size:20px;
+    font-size:18px;
     color:#D9A8AE;
     position:relative;
     top:-6px;
   }
-  .sew-row{
+  .trace-line.num::after{content:"1 2 3"; color:#8FBF9F;}
+  .syll-row{
     display:flex;
-    align-items:center;
     gap:6px;
-    margin-top:4px;
+    margin-top:2px;
+    flex-wrap:wrap;
   }
-  .sew-dot{
-    width:6px;height:6px;border-radius:50%;
-    background:#CBB9E0;
+  .syll-chip{
+    background:#fff;
+    border:1.5px dashed #CBB9E0;
+    border-radius:8px;
+    padding:2px 8px;
+    font-family:'Baloo 2', sans-serif;
+    font-size:13px;
+    color:#7A5FA0;
   }
   .float-badge{
     position:absolute;
@@ -345,64 +351,135 @@
     font-size:17px;
   }
 
-  /* ---------- what's included ---------- */
-  .included{
+  /* ---------- dor / identificação ---------- */
+  .dor{
     padding:80px 0;
-    background:var(--cream-2);
   }
-  .included-grid{
+  .dor-grid{
     display:grid;
-    grid-template-columns:1fr 1.1fr;
+    grid-template-columns:1fr 1fr;
     gap:56px;
-    align-items:center;
+    align-items:flex-start;
   }
-  .stack-mock{
-    position:relative;
+  .dor-intro h2{font-size:clamp(24px, 3.2vw, 34px);}
+  .dor-intro p{margin-top:16px; color:var(--ink-soft); font-size:17px;}
+  .pain-list{
     display:flex;
-    justify-content:center;
-    padding:20px 0;
+    flex-direction:column;
+    gap:12px;
+    margin-top:22px;
   }
-  .stack-page{
-    width:220px;
-    aspect-ratio:210/297;
+  .pain-item{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    font-size:15.5px;
+    color:var(--ink-soft);
+  }
+  .pain-x{
+    flex:none;
+    width:24px;height:24px;
+    border-radius:50%;
+    background:var(--pink);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .solution-box{
     background:#fff;
-    border-radius:14px;
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:30px;
     box-shadow:var(--shadow);
-    position:absolute;
-    padding:18px;
   }
-  .stack-page.s1{transform:rotate(-11deg) translateX(-90px); background:var(--mint);}
-  .stack-page.s2{transform:rotate(-3deg) translateX(-32px); z-index:1; background:var(--pink);}
-  .stack-page.s3{transform:rotate(5deg) translateX(30px); z-index:2; background:var(--peach);}
-  .stack-page.s4{transform:rotate(12deg) translateX(90px); z-index:0; background:var(--yellow);}
-  .stack-mock{min-height:300px;}
-
+  .solution-box > strong{
+    font-family:'Baloo 2', sans-serif;
+    font-size:18px;
+    display:block;
+    margin-bottom:16px;
+  }
   .included-list{
     display:flex;
     flex-direction:column;
-    gap:18px;
+    gap:14px;
   }
   .included-item{
     display:flex;
-    gap:14px;
+    gap:12px;
     align-items:flex-start;
-    background:#fff;
-    border:1px solid var(--line);
-    padding:16px 18px;
-    border-radius:16px;
   }
   .check{
     flex:none;
-    width:26px;height:26px;
+    width:24px;height:24px;
     border-radius:50%;
     background:var(--mint);
     display:flex;align-items:center;justify-content:center;
   }
-  .included-item strong{font-family:'Baloo 2', sans-serif;font-size:16px;}
-  .included-item span{display:block;color:var(--ink-soft);font-size:15px;margin-top:2px;}
+  .included-item span{color:var(--ink-soft); font-size:15px;}
+
+  /* ---------- o que é a oferta ---------- */
+  .oferta-info{
+    padding:80px 0;
+    background:var(--cream-2);
+    text-align:center;
+  }
+  .oferta-info h2{font-size:clamp(26px, 3.4vw, 36px); max-width:680px; margin:0 auto;}
+  .oferta-info p{margin-top:16px; color:var(--ink-soft); font-size:17px; max-width:640px; margin-left:auto; margin-right:auto;}
+  .chip-row{
+    margin-top:30px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+  }
+  .chip{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:100px;
+    padding:9px 18px;
+    font-family:'Baloo 2', sans-serif;
+    font-weight:600;
+    font-size:14.5px;
+    box-shadow:0 4px 12px rgba(62,58,54,0.05);
+  }
+
+  /* ---------- what's included (modules) ---------- */
+  .included{
+    padding:80px 0;
+  }
+  .module-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:24px;
+  }
+  .module-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:28px;
+    box-shadow:0 6px 20px rgba(62,58,54,0.05);
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .module-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 16px 30px rgba(62,58,54,0.1);
+  }
+  .module-num{
+    flex:none;
+    width:44px;height:44px;
+    border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Baloo 2', sans-serif;
+    font-weight:800;
+    font-size:18px;
+    color:#fff;
+  }
+  .module-card h3{font-size:18.5px; margin-bottom:6px;}
+  .module-card p{color:var(--ink-soft); font-size:15px;}
 
   /* ---------- benefits ---------- */
-  .benefits{padding:88px 0;}
+  .benefits{padding:88px 0; background:var(--cream-2);}
   .benefit-grid{
     display:grid;
     grid-template-columns:repeat(4, 1fr);
@@ -433,49 +510,80 @@
   .benefit-card h3{font-size:19px;margin-bottom:8px;}
   .benefit-card p{color:var(--ink-soft);font-size:15px;}
 
-  /* ---------- how it works ---------- */
-  .how{
+  /* ---------- para quem é ---------- */
+  .para-quem{
     padding:88px 0;
+  }
+  .quem-list{
+    max-width:680px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  .quem-item{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+    background:#fff;
+    border:1px solid var(--line);
+    padding:18px 20px;
+    border-radius:16px;
+    font-size:16px;
+  }
+
+  /* ---------- oferta e preço ---------- */
+  .oferta-preco{
+    padding:90px 0 100px;
+    text-align:center;
     background:var(--cream-2);
     position:relative;
     overflow:hidden;
   }
-  .how-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:32px;
-    position:relative;
-  }
-  .how-step{
-    text-align:center;
-    position:relative;
-    padding:0 12px;
-  }
-  .how-number{
-    width:64px;height:64px;
-    margin:0 auto 20px;
-    border-radius:50%;
+  .price-card{
+    max-width:480px;
+    margin:0 auto;
     background:#fff;
-    border:3px solid var(--coral);
-    color:var(--coral-deep);
+    border-radius:28px;
+    padding:44px 36px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--line);
+    position:relative;
+    z-index:2;
+  }
+  .old-price{
+    color:var(--ink-soft);
+    text-decoration:line-through;
+    font-size:18px;
+    font-weight:700;
+  }
+  .price-tag{
+    display:inline-flex;
+    align-items:baseline;
+    gap:6px;
+    margin-top:8px;
     font-family:'Baloo 2', sans-serif;
-    font-weight:800;
-    font-size:24px;
+  }
+  .price-tag .big{font-size:48px;font-weight:800;color:var(--coral-deep);}
+  .price-tag .small{font-size:16px;color:var(--ink-soft);font-weight:600;}
+
+  /* ---------- garantia ---------- */
+  .garantia{
+    padding:80px 0;
+    text-align:center;
+  }
+  .seal{
+    width:88px;height:88px;
+    margin:0 auto 22px;
+    border-radius:50%;
+    background:var(--mint);
     display:flex;align-items:center;justify-content:center;
     box-shadow:var(--shadow);
   }
-  .how-step h3{font-size:18px;margin-bottom:8px;}
-  .how-step p{color:var(--ink-soft);font-size:15px;}
-  .how-arrow{
-    position:absolute;
-    top:30px;
-    right:-26px;
-    color:var(--pink-deep);
-    display:block;
-  }
-  .how-step:last-child .how-arrow{display:none;}
+  .garantia h2{font-size:clamp(24px, 3.2vw, 32px); max-width:560px; margin:0 auto;}
+  .garantia p{margin-top:14px; color:var(--ink-soft); font-size:17px; max-width:520px; margin-left:auto; margin-right:auto;}
 
-  /* ---------- final cta ---------- */
+  /* ---------- urgência / final cta ---------- */
   .final-cta{
     padding:100px 0 120px;
     text-align:center;
@@ -493,15 +601,51 @@
     font-size:18px;
   }
   .final-cta .btn{margin-top:32px;}
-  .price-tag{
-    display:inline-flex;
-    align-items:baseline;
-    gap:6px;
-    margin-top:22px;
-    font-family:'Baloo 2', sans-serif;
+
+  /* ---------- faq ---------- */
+  .faq{
+    padding:80px 0 110px;
+    background:var(--cream-2);
   }
-  .price-tag .big{font-size:44px;font-weight:800;color:var(--coral-deep);}
-  .price-tag .small{font-size:16px;color:var(--ink-soft);font-weight:600;}
+  .faq-list{
+    max-width:720px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .faq-item{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:4px 22px;
+  }
+  .faq-item summary{
+    cursor:pointer;
+    list-style:none;
+    padding:18px 0;
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    font-size:16.5px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{
+    content:"+";
+    font-size:24px;
+    color:var(--coral);
+    flex:none;
+    transition:transform .2s ease;
+  }
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item p{
+    padding-bottom:18px;
+    color:var(--ink-soft);
+    font-size:15.5px;
+  }
 
   footer{
     padding:32px 24px 100px;
@@ -535,10 +679,9 @@
   @media (max-width: 900px){
     .hero-grid{grid-template-columns:1fr;}
     .hero-visual{order:-1;min-height:300px;margin-bottom:12px;}
-    .included-grid{grid-template-columns:1fr;}
+    .dor-grid{grid-template-columns:1fr;}
+    .module-grid{grid-template-columns:1fr;}
     .benefit-grid{grid-template-columns:1fr 1fr;}
-    .how-grid{grid-template-columns:1fr;gap:44px;}
-    .how-arrow{display:none;}
     .sticky-cta{display:flex;}
     body{padding-bottom:0;}
   }
@@ -547,6 +690,7 @@
     .page{width:210px;}
     .header-cta{display:none;}
     .hero{padding-top:36px;}
+    .price-card{padding:34px 22px;}
   }
 </style>
 </head>
@@ -578,10 +722,10 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9H21.5L15.8 13.2L18 20L12 15.8L6 20L8.2 13.2L2.5 9H9.5L12 2Z" fill="#2C6E56"/></svg>
         Pronto pra imprimir hoje
       </span>
-      <h1 class="reveal reveal-delay-1">Atividades prontas pra imprimir, <span>sem precisar criar nada.</span></h1>
-      <p class="hero-sub reveal reveal-delay-2">Um PDF com folhas de caligrafia e alinhavo pra crianças pequenas. Você baixa, imprime e já usa — em casa ou na sala de aula, hoje mesmo.</p>
+      <h1 class="reveal reveal-delay-1">Enquanto seu filho brinca, ele também pode <span>aprender a escrever.</span></h1>
+      <p class="hero-sub reveal reveal-delay-2">Ensine caligrafia, sílabas, números e as primeiras palavras de um jeito leve e divertido — com atividades para imprimir e usar hoje mesmo, em casa.</p>
       <div class="hero-actions reveal reveal-delay-3">
-        <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn">Baixar agora <span class="btn-price">R$10</span></a>
+        <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn">Quero praticar com meu filho <span class="btn-price">R$10</span></a>
         <a href="#incluso" class="btn btn-ghost">Ver o que vem no PDF</a>
       </div>
       <div class="hero-trust reveal reveal-delay-4">
@@ -595,7 +739,7 @@
         </div>
         <div class="hero-trust-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8FBF9F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Formato A4
+          Garantia de 7 dias
         </div>
       </div>
     </div>
@@ -604,20 +748,17 @@
       <div class="page page-back"></div>
       <div class="page page-mid"></div>
       <div class="page page-front">
-        <span class="tag">Caligrafia</span>
+        <span class="tag">Alfabeto</span>
         <div class="trace-line"></div>
         <div class="trace-line" style="opacity:.75"></div>
-        <div class="trace-line" style="opacity:.5"></div>
-        <div style="height:1px;background:var(--line);margin:6px 0;"></div>
-        <span class="tag" style="background:var(--mint);color:#2C6E56;">Alinhavo</span>
-        <div class="sew-row">
-          <div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div>
-          <div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div>
+        <div style="height:1px;background:var(--line);margin:4px 0;"></div>
+        <span class="tag" style="background:var(--mint);color:#2C6E56;">Sílabas</span>
+        <div class="syll-row">
+          <span class="syll-chip">ba</span><span class="syll-chip">be</span><span class="syll-chip">bi</span><span class="syll-chip">bo</span>
         </div>
-        <div class="sew-row">
-          <div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div>
-          <div class="sew-dot"></div><div class="sew-dot"></div>
-        </div>
+        <div style="height:1px;background:var(--line);margin:4px 0;"></div>
+        <span class="tag" style="background:var(--yellow);color:#8A6A1F;">Números</span>
+        <div class="trace-line num" style="opacity:.85"></div>
       </div>
       <div class="float-badge badge-top">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" stroke="#F0714A" stroke-width="1.8"/><path d="M14 2v6h6" stroke="#F0714A" stroke-width="1.8"/></svg>
@@ -631,33 +772,100 @@
   </div>
 </section>
 
-<section class="included" id="incluso">
-  <div class="wrap included-grid">
-    <div class="stack-mock reveal">
-      <div class="stack-page s1"></div>
-      <div class="stack-page s4"></div>
-      <div class="stack-page s2"></div>
-      <div class="stack-page s3"></div>
+<section class="dor">
+  <div class="wrap dor-grid">
+    <div class="dor-intro reveal">
+      <h2>Seu filho já folheou um caderno de caligrafia e desistiu na segunda página?</h2>
+      <p>Ou a "atividade de caligrafia" em casa vira só repetir a mesma letra até cansar — sem graça, sem vontade de continuar, e no fim ninguém aprende nada.</p>
+      <div class="pain-list">
+        <div class="pain-item">
+          <span class="pain-x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#D95F39" stroke-width="2.6" stroke-linecap="round"/></svg></span>
+          Atividade repetitiva, sempre a mesma letra, sem graça nenhuma
+        </div>
+        <div class="pain-item">
+          <span class="pain-x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#D95F39" stroke-width="2.6" stroke-linecap="round"/></svg></span>
+          Criança impaciente, larga o lápis nos primeiros minutos
+        </div>
+        <div class="pain-item">
+          <span class="pain-x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#D95F39" stroke-width="2.6" stroke-linecap="round"/></svg></span>
+          Você sem tempo pra montar atividade nova toda semana
+        </div>
+      </div>
     </div>
-    <div>
-      <span class="section-eyebrow reveal">O que vem no PDF</span>
-      <h2 class="reveal reveal-delay-1" style="margin-bottom:22px;">Tudo o que você precisa pra sentar a criança e começar.</h2>
+    <div class="solution-box reveal reveal-delay-1">
+      <strong>Com o Caderno de Caligrafia, você tem uma solução simples:</strong>
       <div class="included-list">
-        <div class="included-item reveal reveal-delay-1">
+        <div class="included-item">
           <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><strong>Folhas de caligrafia</strong><span>Alfabeto completo em maiúsculas e minúsculas, com linhas-guia para treinar o traçado.</span></div>
+          <span>Atividades variadas que prendem a atenção — não é só repetir letra</span>
         </div>
-        <div class="included-item reveal reveal-delay-2">
+        <div class="included-item">
           <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><strong>Folhas de alinhavo</strong><span>Formas, animais e números com contorno pontilhado, prontos para furar e costurar com barbante.</span></div>
+          <span>Prática de sílabas e formação de palavras, passo a passo</span>
         </div>
-        <div class="included-item reveal reveal-delay-3">
+        <div class="included-item">
           <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><strong>Formato A4, alta resolução</strong><span>Feito para imprimir em casa ou na escola sem perder qualidade.</span></div>
+          <span>Números de 0 a 9 e tabuada pra treinar junto</span>
         </div>
-        <div class="included-item reveal reveal-delay-4">
+        <div class="included-item">
           <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><strong>Uso livre e ilimitado</strong><span>Imprima quantas vezes quiser, para um filho, uma turma inteira ou os próximos anos.</span></div>
+          <span>Atividades de contornar e colorir, pra tornar tudo mais leve</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="oferta-info">
+  <div class="wrap">
+    <span class="section-eyebrow reveal">A oferta</span>
+    <h2 class="reveal reveal-delay-1">Caderno de Atividades de Caligrafia — para imprimir</h2>
+    <p class="reveal reveal-delay-2">Um caderno digital completo com dezenas de páginas prontas pra imprimir, feito para crianças praticarem escrita, números e primeiras palavras em casa, no próprio ritmo. Ideal para usar durante a alfabetização, no reforço escolar ou em qualquer momento livre da criança.</p>
+    <div class="chip-row reveal reveal-delay-3">
+      <span class="chip">Alfabeto completo</span>
+      <span class="chip">Sílabas</span>
+      <span class="chip">Formação de palavras</span>
+      <span class="chip">Números 0-9</span>
+      <span class="chip">Tabuada</span>
+      <span class="chip">Contornar</span>
+      <span class="chip">Colorir</span>
+    </div>
+  </div>
+</section>
+
+<section class="included" id="incluso">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow reveal">O que você recebe</span>
+      <h2 class="reveal reveal-delay-1">Quatro módulos de atividades, prontos pra imprimir.</h2>
+    </div>
+    <div class="module-grid">
+      <div class="module-card reveal">
+        <div class="module-num" style="background:var(--coral);">1</div>
+        <div>
+          <h3>Alfabeto completo</h3>
+          <p>Todas as letras, maiúsculas e minúsculas, com linha-guia pra treinar o traçado do início ao fim.</p>
+        </div>
+      </div>
+      <div class="module-card reveal reveal-delay-1">
+        <div class="module-num" style="background:#7A5FA0;">2</div>
+        <div>
+          <h3>Sílabas e formação de palavras</h3>
+          <p>Atividades para juntar sílabas e montar as primeiras palavras, com dificuldade crescente.</p>
+        </div>
+      </div>
+      <div class="module-card reveal reveal-delay-2">
+        <div class="module-num" style="background:#2C6E56;">3</div>
+        <div>
+          <h3>Números e tabuada</h3>
+          <p>Números de 0 a 9 para traçar e a tabuada pra praticar as primeiras continhas.</p>
+        </div>
+      </div>
+      <div class="module-card reveal reveal-delay-3">
+        <div class="module-num" style="background:#B06B2E;">4</div>
+        <div>
+          <h3>Contornar e colorir</h3>
+          <p>Atividades de tracejado e páginas pra colorir, pra variar a mecânica e manter o interesse da criança.</p>
         </div>
       </div>
     </div>
@@ -675,15 +883,15 @@
         <div class="icon-wrap c1">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1Z" stroke="#B5474F" stroke-width="1.8" stroke-linejoin="round"/></svg>
         </div>
-        <h3>Pronto em segundos</h3>
-        <p>Sem montar apostila, sem procurar molde. Abriu o PDF, já pode imprimir.</p>
+        <h3>Desenvolve a escrita de verdade</h3>
+        <p>Atividades pensadas para coordenação motora, atenção e traçado das letras.</p>
       </div>
       <div class="benefit-card reveal reveal-delay-1">
         <div class="icon-wrap c2">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.5-8.5C.7 8.6 3 5 6.5 5c2 0 3.3 1 5.5 3 2.2-2 3.5-3 5.5-3C21 5 23.3 8.6 21.5 12.5 19 16.65 12 21 12 21Z" stroke="#2C6E56" stroke-width="1.8"/></svg>
         </div>
-        <h3>Desenvolvimento de verdade</h3>
-        <p>Atividades pensadas para coordenação motora, atenção e traçado das letras.</p>
+        <h3>Sem birra, sem cansaço</h3>
+        <p>Mecânicas variadas evitam a repetição chata e mantêm a criança interessada.</p>
       </div>
       <div class="benefit-card reveal reveal-delay-2">
         <div class="icon-wrap c3">
@@ -703,51 +911,103 @@
   </div>
 </section>
 
-<section class="how">
-  <svg class="blob" style="bottom:-100px; left:40%; width:340px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <path fill="var(--yellow)" d="M45,-55.6C57.9,-47.4,67.4,-33.1,71.1,-17.7C74.8,-2.3,72.7,14.2,64.9,27.7C57.1,41.2,43.6,51.7,28.9,58.6C14.2,65.5,-1.7,68.8,-17.1,66.1C-32.5,63.4,-47.4,54.7,-57.4,42C-67.4,29.3,-72.5,12.6,-71.4,-3.5C-70.3,-19.6,-63,-35.1,-51.4,-43.6C-39.8,-52.1,-23.9,-53.6,-8.4,-56.5C7.1,-59.4,32.1,-63.8,45,-55.6Z" transform="translate(100 100)" opacity="0.45"/>
-  </svg>
-  <div class="wrap" style="position:relative;">
+<section class="para-quem">
+  <div class="wrap">
     <div class="section-head">
-      <span class="section-eyebrow reveal">Como funciona</span>
-      <h2 class="reveal reveal-delay-1">Três passos e já está imprimindo.</h2>
+      <span class="section-eyebrow reveal">Para quem é</span>
+      <h2 class="reveal reveal-delay-1">Este material é para você que:</h2>
     </div>
-    <div class="how-grid">
-      <div class="how-step reveal">
-        <div class="how-number">1</div>
-        <h3>Compra em poucos cliques</h3>
-        <p>Pagamento simples e rápido, sem cadastro complicado.</p>
-        <svg class="how-arrow" width="40" height="20" viewBox="0 0 40 20" fill="none"><path d="M1 10h34M28 3l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="quem-list">
+      <div class="quem-item reveal">
+        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Quer que o filho pratique caligrafia sem enjoar na segunda página
       </div>
-      <div class="how-step reveal reveal-delay-1">
-        <div class="how-number">2</div>
-        <h3>Recebe o PDF na hora</h3>
-        <p>O material chega direto pra você baixar, sem espera.</p>
-        <svg class="how-arrow" width="40" height="20" viewBox="0 0 40 20" fill="none"><path d="M1 10h34M28 3l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="quem-item reveal reveal-delay-1">
+        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        É professor(a) de alfabetização e busca atividades prontas e variadas
       </div>
-      <div class="how-step reveal reveal-delay-2">
-        <div class="how-number">3</div>
-        <h3>Imprime e usa hoje</h3>
-        <p>É só colocar na impressora e chamar a criançada.</p>
+      <div class="quem-item reveal reveal-delay-2">
+        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Quer reduzir o tempo de tela do filho com algo que realmente ensina
+      </div>
+      <div class="quem-item reveal reveal-delay-3">
+        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Tem crianças em fase de alfabetização, mais ou menos entre 4 e 8 anos
       </div>
     </div>
   </div>
 </section>
 
-<section class="final-cta" id="comprar">
+<section class="oferta-preco" id="comprar">
+  <svg class="blob" style="top:-90px; right:-120px; width:360px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path fill="var(--yellow)" d="M45,-55.6C57.9,-47.4,67.4,-33.1,71.1,-17.7C74.8,-2.3,72.7,14.2,64.9,27.7C57.1,41.2,43.6,51.7,28.9,58.6C14.2,65.5,-1.7,68.8,-17.1,66.1C-32.5,63.4,-47.4,54.7,-57.4,42C-67.4,29.3,-72.5,12.6,-71.4,-3.5C-70.3,-19.6,-63,-35.1,-51.4,-43.6C-39.8,-52.1,-23.9,-53.6,-8.4,-56.5C7.1,-59.4,32.1,-63.8,45,-55.6Z" transform="translate(100 100)" opacity="0.4"/>
+  </svg>
+  <div class="wrap" style="position:relative;">
+    <span class="section-eyebrow reveal">Oferta</span>
+    <h2 class="reveal reveal-delay-1" style="margin-bottom:32px;">Caderno de Atividades de Caligrafia — Pacote Completo</h2>
+    <div class="price-card reveal reveal-delay-2">
+      <span class="old-price">De R$27,00</span>
+      <div class="price-tag">
+        <span class="big">R$10</span>
+        <span class="small">pagamento único</span>
+      </div>
+      <p style="margin-top:18px; color:var(--ink-soft); font-size:15.5px;">Você recebe o PDF completo por e-mail, na hora, pra baixar e imprimir quantas vezes quiser.</p>
+      <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn" style="margin-top:24px; width:100%;">Quero meu caderno agora por R$10</a>
+    </div>
+  </div>
+</section>
+
+<section class="garantia">
+  <div class="wrap">
+    <div class="seal reveal">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 2l7 3v6c0 5-3.4 8.6-7 10-3.6-1.4-7-5-7-10V5l7-3Z" stroke="#2C6E56" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#2C6E56" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h2 class="reveal reveal-delay-1">Garantia incondicional de 7 dias</h2>
+    <p class="reveal reveal-delay-2">Se você não gostar do material, devolvemos 100% do seu dinheiro. Simples assim, sem perguntas.</p>
+  </div>
+</section>
+
+<section class="final-cta">
   <svg class="blob" style="top:-80px; left:-100px; width:360px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <path fill="var(--pink)" d="M46.5,-58.5C60.6,-49.7,72.6,-36.4,76.9,-21.2C81.2,-6,77.7,11.1,69.9,25.3C62.1,39.5,50,50.7,36.1,59.4C22.2,68.1,6.5,74.3,-9.6,74.9C-25.7,75.6,-42.1,70.7,-53.6,60.1C-65.1,49.4,-71.6,32.9,-74.6,15.9C-77.6,-1.2,-77.1,-18.9,-68.9,-31.9C-60.7,-44.9,-44.8,-53.3,-29.9,-61.6C-15,-70,-1,-78.3,12.4,-77.4C25.8,-76.5,33,-67.3,46.5,-58.5Z" transform="translate(100 100)" opacity="0.4"/>
   </svg>
   <div class="wrap" style="position:relative;">
-    <h2 class="reveal">Não precisa esperar pra amanhã. Baixe agora e já pode imprimir hoje.</h2>
-    <p class="reveal reveal-delay-1">Entrega automática, sem enrolação. Você paga, recebe o PDF e já senta com a criança.</p>
-    <div class="price-tag reveal reveal-delay-2">
-      <span class="big">R$10</span>
-      <span class="small">pagamento único</span>
-    </div>
-    <div class="reveal reveal-delay-3">
-      <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn" id="cta-final">Quero o meu por R$10</a>
+    <h2 class="reveal">Seus filhos crescem rápido — o momento de aprender a escrever bem é agora.</h2>
+    <p class="reveal reveal-delay-1">Baixe hoje o Caderno de Caligrafia e comece já essa semana a transformar o tempo livre da criança em aprendizado.</p>
+    <div class="reveal reveal-delay-2">
+      <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn" id="cta-final">Quero começar agora</a>
       <p class="micro-note">Acesso imediato após a confirmação do pagamento.</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow reveal">Dúvidas frequentes</span>
+      <h2 class="reveal reveal-delay-1">Perguntas frequentes</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>Como recebo o material?</summary>
+        <p>Assim que a compra é confirmada, você recebe o link de download por e-mail (e pode acessar direto na página de obrigado).</p>
+      </details>
+      <details class="faq-item reveal reveal-delay-1">
+        <summary>Posso imprimir mais de uma vez?</summary>
+        <p>Sim! É um arquivo digital — você pode imprimir quantas vezes quiser, para todos os seus filhos ou alunos.</p>
+      </details>
+      <details class="faq-item reveal reveal-delay-2">
+        <summary>Para qual idade é indicado?</summary>
+        <p>As atividades foram pensadas para crianças em fase de alfabetização, entre 4 e 8 anos, mas pais relatam que crianças um pouco mais velhas também se divertem.</p>
+      </details>
+      <details class="faq-item reveal reveal-delay-3">
+        <summary>E se eu não gostar?</summary>
+        <p>Você tem 7 dias de garantia incondicional. Se não gostar, devolvemos 100% do valor.</p>
+      </details>
+      <details class="faq-item reveal reveal-delay-4">
+        <summary>Preciso de impressora colorida?</summary>
+        <p>Não é obrigatório — o material funciona bem em preto e branco também.</p>
+      </details>
     </div>
   </div>
 </section>
@@ -758,8 +1018,8 @@
 
 <div class="sticky-cta" id="stickyCta">
   <div class="info">
-    <strong>PDF de atividades</strong>
-    <span>Caligrafia + alinhavo</span>
+    <strong>Caderno de Caligrafia</strong>
+    <span>Alfabeto, sílabas e números</span>
   </div>
   <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn">Baixar por R$10</a>
 </div>
