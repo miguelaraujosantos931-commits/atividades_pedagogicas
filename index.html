@@ -3,406 +3,311 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mundo Pequenino — Atividades de Caligrafia e Alinhavo para Imprimir</title>
-<meta name="description" content="PDF de atividades de caligrafia e alinhavo prontas para imprimir. Baixe agora e use hoje mesmo com seus filhos ou alunos. Apenas R$10.">
+<title>Traço &amp; Linha — Atividades de Caligrafia e Alinhavo para Imprimir</title>
+<meta name="description" content="PDF com 30+ atividades de caligrafia e alinhavo para crianças de 3 a 6 anos. Compre, receba por e-mail e imprima hoje mesmo. R$10.">
+<meta property="og:title" content="Traço &amp; Linha — Atividades de Caligrafia e Alinhavo">
+<meta property="og:description" content="PDF pronto pra imprimir: 30+ atividades de caligrafia e alinhavo para crianças de 3 a 6 anos.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schoolbell&family=Karla:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --cream:#FFFBF2;
-    --cream-2:#FFF4E3;
-    --ink:#3E3A36;
-    --ink-soft:#6B6560;
-    --pink:#FFD3D8;
-    --pink-deep:#F4A6B0;
-    --mint:#CFEFE1;
-    --mint-deep:#8FD3B9;
-    --yellow:#FFE9A8;
-    --peach:#FFD9B0;
-    --coral:#F0714A;
-    --coral-deep:#D95F39;
-    --line:#EADFD0;
-    --shadow: 0 10px 30px rgba(62,58,54,0.08);
+    --paper:#FCFAF4;
+    --ink:#2A2420;
+    --ink-soft:#5B5449;
+    --green:#3F7D4E;
+    --green-dark:#2E5C39;
+    --green-tint:#EAF2EA;
+    --orange:#E8791E;
+    --orange-dark:#B85F16;
+    --orange-tint:#FCEEDD;
+    --red:#C33E2E;
+    --red-dark:#9E2F22;
+    --line:#E4DED2;
+    --white:#FFFFFF;
   }
 
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
     margin:0;
-    background:var(--cream);
+    background:var(--paper);
     color:var(--ink);
-    font-family:'Nunito', sans-serif;
+    font-family:'Karla', sans-serif;
     font-size:17px;
-    line-height:1.6;
+    line-height:1.65;
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
   }
-  h1,h2,h3{
-    font-family:'Baloo 2', sans-serif;
-    font-weight:700;
+  h1,h2{
+    font-family:'Schoolbell', cursive;
+    font-weight:400;
     margin:0;
-    line-height:1.2;
+  }
+  h1{font-size:clamp(34px,5.2vw,56px);line-height:1.18;}
+  h2{font-size:clamp(28px,3.6vw,40px);line-height:1.2;}
+  h3{
+    font-family:'Karla', sans-serif;
+    font-weight:800;
+    font-size:19px;
+    line-height:1.35;
+    margin:0;
   }
   p{margin:0;}
+  small{font-size:14px;line-height:1.5;font-weight:600;color:var(--ink-soft);}
   img,svg{max-width:100%;display:block;}
   a{text-decoration:none;color:inherit;}
-  .wrap{
-    max-width:1120px;
-    margin:0 auto;
-    padding:0 24px;
-  }
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
   section{position:relative;}
 
-  /* ---------- reveal on scroll ---------- */
-  .reveal{
-    opacity:0;
-    transform:translateY(22px);
-    transition:opacity .7s ease, transform .7s ease;
+  /* ---------- focus ---------- */
+  a:focus-visible, button:focus-visible{
+    outline:3px solid var(--green);
+    outline-offset:3px;
+    border-radius:4px;
   }
-  .reveal.in-view{
-    opacity:1;
-    transform:translateY(0);
-  }
-  .reveal-delay-1.in-view{transition-delay:.08s;}
-  .reveal-delay-2.in-view{transition-delay:.16s;}
-  .reveal-delay-3.in-view{transition-delay:.24s;}
-  .reveal-delay-4.in-view{transition-delay:.32s;}
 
   /* ---------- buttons ---------- */
   .btn{
+    position:relative;
+    overflow:hidden;
     display:inline-flex;
     align-items:center;
     justify-content:center;
     gap:10px;
-    padding:17px 34px;
-    background:var(--coral);
+    padding:17px 32px;
+    background:var(--red);
     color:#fff;
-    font-family:'Baloo 2', sans-serif;
-    font-weight:700;
-    font-size:18px;
+    font-family:'Karla', sans-serif;
+    font-weight:800;
+    font-size:17px;
     border:none;
-    border-radius:100px;
+    border-radius:10px;
     cursor:pointer;
-    box-shadow:0 8px 0 var(--coral-deep), 0 14px 24px rgba(217,95,57,0.28);
-    transition:transform .18s ease, box-shadow .18s ease;
+    box-shadow:0 4px 0 var(--red-dark);
+    transition:transform .15s ease, box-shadow .15s ease, background-color .15s ease;
     white-space:nowrap;
   }
-  .btn:hover{
-    transform:translateY(-3px);
-    box-shadow:0 11px 0 var(--coral-deep), 0 18px 30px rgba(217,95,57,0.32);
-  }
+  .btn:hover{background:var(--red-dark);}
   .btn:active{
-    transform:translateY(2px);
-    box-shadow:0 5px 0 var(--coral-deep), 0 8px 16px rgba(217,95,57,0.28);
+    transform:translateY(4px);
+    box-shadow:0 0 0 var(--red-dark);
   }
-  .btn-price{
-    font-family:'Nunito', sans-serif;
-    font-weight:800;
-    font-size:14px;
-    background:rgba(255,255,255,0.28);
-    padding:4px 12px;
-    border-radius:100px;
+  .stamp-mark{
+    position:absolute;
+    width:16px;height:16px;
+    border-radius:50%;
+    border:2px solid #fff;
+    transform:translate(-50%,-50%) scale(0);
+    pointer-events:none;
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .stamp-mark.go{animation:stampPulse .5s ease-out forwards;}
+  }
+  @keyframes stampPulse{
+    0%{transform:translate(-50%,-50%) scale(0);opacity:.9;}
+    70%{transform:translate(-50%,-50%) scale(2.6);opacity:.35;}
+    100%{transform:translate(-50%,-50%) scale(3.4);opacity:0;}
   }
   .btn-ghost{
     background:transparent;
     box-shadow:none;
-    color:var(--coral-deep);
-    border:2px solid var(--coral);
-    padding:15px 30px;
+    color:var(--green-dark);
+    border:2px solid var(--green);
+    padding:15px 28px;
   }
-  .btn-ghost:hover{
-    transform:translateY(-2px);
-    box-shadow:0 8px 18px rgba(217,95,57,0.15);
-  }
+  .btn-ghost:hover{background:var(--green-tint);}
+  .btn-ghost:active{transform:translateY(2px);}
 
-  .micro-note{
-    font-size:14px;
-    color:var(--ink-soft);
-    margin-top:12px;
-  }
+  .micro-note{font-size:14px;color:var(--ink-soft);margin-top:12px;}
 
   /* ---------- header ---------- */
   header{
     position:sticky;
     top:0;
     z-index:50;
-    background:rgba(255,251,242,0.85);
-    backdrop-filter:blur(8px);
+    background:rgba(252,250,244,0.92);
+    backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line);
   }
   .header-inner{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:16px 24px;
+    padding:14px 0;
+    gap:16px;
   }
   .logo{
     display:flex;
     align-items:center;
-    gap:10px;
-    font-family:'Baloo 2', sans-serif;
-    font-weight:700;
-    font-size:19px;
+    gap:9px;
+    font-family:'Schoolbell', cursive;
+    font-size:22px;
     color:var(--ink);
+    flex:none;
   }
-  .logo-mark{
-    width:36px;height:36px;
-    border-radius:12px;
-    background:var(--mint);
-    display:flex;align-items:center;justify-content:center;
-    transform:rotate(-6deg);
-  }
-  .header-cta{
-    padding:11px 22px;
+  .nav-links{
+    display:flex;
+    gap:28px;
+    font-weight:700;
     font-size:15px;
-    box-shadow:0 5px 0 var(--coral-deep);
   }
-  .header-cta:hover{box-shadow:0 7px 0 var(--coral-deep);}
+  .nav-links a{color:var(--ink-soft);}
+  .nav-links a:hover{color:var(--green-dark);}
+  .header-cta{
+    padding:11px 20px;
+    font-size:15px;
+    flex:none;
+  }
+  @media (max-width:720px){
+    .nav-links{display:none;}
+  }
 
   /* ---------- hero ---------- */
-  .hero{
-    padding:64px 0 40px;
-    position:relative;
-    overflow:hidden;
-  }
-  .blob{
-    position:absolute;
-    filter:blur(0px);
-    z-index:0;
-    opacity:0.9;
-  }
+  .hero{padding:56px 0 48px;}
   .hero-grid{
     display:grid;
-    grid-template-columns:1.1fr 1fr;
-    gap:48px;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:56px;
     align-items:center;
-    position:relative;
-    z-index:2;
   }
-  .eyebrow{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    background:var(--mint);
-    color:#2C6E56;
-    font-weight:800;
-    font-size:13.5px;
-    letter-spacing:.02em;
-    padding:8px 16px;
-    border-radius:100px;
-    margin-bottom:22px;
-  }
-  .hero h1{
-    font-size:clamp(32px, 4.4vw, 52px);
-    color:var(--ink);
-  }
-  .hero h1 span{
-    background:linear-gradient(180deg, transparent 62%, var(--yellow) 62%);
-  }
-  .hero-sub{
-    margin-top:20px;
-    font-size:19px;
-    color:var(--ink-soft);
-    max-width:480px;
-  }
-  .hero-actions{
-    margin-top:32px;
-    display:flex;
-    align-items:center;
-    gap:18px;
-    flex-wrap:wrap;
-  }
+  .hero-copy{display:flex;flex-direction:column;align-items:flex-start;}
+  .hero-sub{margin-top:20px;font-size:19px;color:var(--ink-soft);max-width:44ch;}
+  .hero-actions{margin-top:32px;}
   .hero-trust{
-    margin-top:28px;
+    margin-top:22px;
     display:flex;
-    gap:22px;
+    gap:8px 18px;
     flex-wrap:wrap;
-  }
-  .hero-trust-item{
-    display:flex;
-    align-items:center;
-    gap:8px;
     font-size:14px;
     font-weight:700;
     color:var(--ink-soft);
   }
+  .hero-trust span:not(:last-child)::after{content:"·";margin-left:18px;color:var(--line);}
 
-  /* ---------- hero visual: pdf mockup ---------- */
+  .hero-story > *{opacity:0;}
+  @media (prefers-reduced-motion: no-preference){
+    .hero-story.play .hs-1{animation:popIn .5s ease forwards;}
+    .hero-story.play .hs-2{animation:drawLine 1s .35s ease forwards, fadeSet .01s .35s forwards;}
+    .hero-story.play .hs-3{animation:riseIn .55s .55s ease forwards;}
+    .hero-story.play .hs-4{animation:riseIn .55s .78s ease forwards;}
+    .hero-story.play .hs-5{animation:stampIn .5s 1s cubic-bezier(.34,1.56,.64,1) forwards;}
+    .hero-story.play .hs-6{animation:riseIn .55s 1.35s ease forwards;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .hero-story > *{opacity:1;}
+  }
+  @keyframes fadeSet{to{opacity:1;}}
+  @keyframes popIn{from{opacity:0;transform:scale(.92);}to{opacity:1;transform:scale(1);}}
+  @keyframes riseIn{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+  @keyframes stampIn{from{opacity:0;transform:scale(1.3);}to{opacity:1;transform:scale(1);}}
+  @keyframes drawLine{to{stroke-dashoffset:0;}}
+
+  /* ---------- hero visual: real paper mockup ---------- */
   .hero-visual{
     position:relative;
     display:flex;
     align-items:center;
     justify-content:center;
-    min-height:380px;
-  }
-  .page{
-    position:absolute;
-    width:280px;
-    aspect-ratio:210/297;
-    background:#fff;
-    border-radius:16px;
-    box-shadow:var(--shadow);
-    padding:22px;
-  }
-  .page-back{
-    transform:rotate(-9deg) translate(-38px, 6px);
-    background:var(--pink);
-    z-index:1;
-  }
-  .page-mid{
-    transform:rotate(6deg) translate(30px, -4px);
-    background:var(--yellow);
-    z-index:2;
-  }
-  .page-front{
-    transform:rotate(-2deg);
-    z-index:3;
-    display:flex;
-    flex-direction:column;
-    gap:14px;
-  }
-  .page-front .tag{
-    align-self:flex-start;
-    background:var(--peach);
-    color:#8A4E23;
-    font-family:'Baloo 2', sans-serif;
-    font-weight:700;
-    font-size:11px;
-    padding:4px 10px;
-    border-radius:100px;
-  }
-  .trace-line{
-    height:26px;
-    position:relative;
-  }
-  .trace-line::before{
-    content:"";
-    position:absolute;
-    left:0;right:0;top:50%;
-    border-top:2px dashed #C9C1B5;
-  }
-  .trace-line::after{
-    content:"a b c";
-    font-family:'Baloo 2', sans-serif;
-    font-size:20px;
-    color:#D9A8AE;
-    position:relative;
-    top:-6px;
-  }
-  .sew-row{
-    display:flex;
-    align-items:center;
-    gap:6px;
-    margin-top:4px;
-  }
-  .sew-dot{
-    width:6px;height:6px;border-radius:50%;
-    background:#CBB9E0;
-  }
-  .float-badge{
-    position:absolute;
-    background:#fff;
-    border-radius:16px;
-    box-shadow:var(--shadow);
-    padding:10px 16px;
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-weight:800;
-    font-size:14px;
-    z-index:4;
-  }
-  .badge-top{top:-6px; right:-10px;}
-  .badge-bottom{bottom:2px; left:-24px;}
-  @keyframes floaty{
-    0%,100%{transform:translateY(0);}
-    50%{transform:translateY(-10px);}
-  }
-  .float-badge{animation:floaty 4.5s ease-in-out infinite;}
-  .badge-bottom{animation-delay:1.2s;}
-
-  /* ---------- section titles ---------- */
-  .section-head{
-    text-align:center;
-    max-width:640px;
-    margin:0 auto 48px;
-  }
-  .section-eyebrow{
-    font-family:'Baloo 2', sans-serif;
-    font-weight:700;
-    color:var(--coral-deep);
-    font-size:15px;
-    margin-bottom:10px;
-    display:block;
-  }
-  .section-head h2{
-    font-size:clamp(26px, 3.4vw, 38px);
-  }
-  .section-head p{
-    margin-top:14px;
-    color:var(--ink-soft);
-    font-size:17px;
-  }
-
-  /* ---------- what's included ---------- */
-  .included{
-    padding:80px 0;
-    background:var(--cream-2);
-  }
-  .included-grid{
-    display:grid;
-    grid-template-columns:1fr 1.1fr;
-    gap:56px;
-    align-items:center;
-  }
-  .stack-mock{
-    position:relative;
-    display:flex;
-    justify-content:center;
+    min-height:340px;
     padding:20px 0;
   }
-  .stack-page{
-    width:220px;
+  .sheet{
+    position:absolute;
+    width:250px;
     aspect-ratio:210/297;
     background:#fff;
-    border-radius:14px;
-    box-shadow:var(--shadow);
-    position:absolute;
-    padding:18px;
+    border:1px solid var(--line);
+    box-shadow:0 14px 30px rgba(42,36,32,0.12);
+    padding:20px;
   }
-  .stack-page.s1{transform:rotate(-11deg) translateX(-90px); background:var(--mint);}
-  .stack-page.s2{transform:rotate(-3deg) translateX(-32px); z-index:1; background:var(--pink);}
-  .stack-page.s3{transform:rotate(5deg) translateX(30px); z-index:2; background:var(--peach);}
-  .stack-page.s4{transform:rotate(12deg) translateX(90px); z-index:0; background:var(--yellow);}
-  .stack-mock{min-height:300px;}
-
-  .included-list{
+  .sheet-calligraphy{
+    transform:rotate(-6deg) translate(-64px, 4px);
+    z-index:1;
+  }
+  .sheet-lace{
+    transform:rotate(5deg) translate(58px, -10px);
+    z-index:2;
     display:flex;
     flex-direction:column;
-    gap:18px;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
   }
-  .included-item{
-    display:flex;
-    gap:14px;
-    align-items:flex-start;
+  .ruled-label{
+    font-family:'Karla', sans-serif;
+    font-weight:800;
+    font-size:11px;
+    color:var(--green-dark);
+    text-transform:none;
+    margin-bottom:10px;
+  }
+  .ruled-row{position:relative;height:34px;}
+  .ruled-row svg{position:absolute;inset:0;width:100%;height:100%;}
+  .lace-label{
+    font-family:'Karla', sans-serif;
+    font-weight:800;
+    font-size:11px;
+    color:var(--orange-dark);
+  }
+  .paperclip{
+    position:absolute;
+    top:-22px;
+    left:calc(50% - 90px);
+    width:44px;
+    z-index:5;
+  }
+  .tape{
+    position:absolute;
+    top:-14px;
+    right:26px;
+    width:70px;
+    height:26px;
+    background:rgba(232,121,30,0.35);
+    border:1px solid rgba(184,95,22,0.35);
+    transform:rotate(8deg);
+    z-index:5;
+  }
+
+  /* ---------- section heads ---------- */
+  .section-head{max-width:560px;margin-bottom:44px;}
+  .section-head h2{margin-bottom:12px;}
+  .section-head p{color:var(--ink-soft);font-size:17px;}
+
+  /* ---------- vitrine ---------- */
+  .vitrine{padding:80px 0;}
+  .vitrine-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+  }
+  .vitrine-card{
     background:#fff;
     border:1px solid var(--line);
-    padding:16px 18px;
-    border-radius:16px;
+    padding:24px;
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
   }
-  .check{
+  .vitrine-thumb{
     flex:none;
-    width:26px;height:26px;
-    border-radius:50%;
-    background:var(--mint);
-    display:flex;align-items:center;justify-content:center;
+    width:78px;
+    height:104px;
+    background:var(--paper);
+    border:1px solid var(--line);
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
-  .included-item strong{font-family:'Baloo 2', sans-serif;font-size:16px;}
-  .included-item span{display:block;color:var(--ink-soft);font-size:15px;margin-top:2px;}
+  .vitrine-card h3{margin-bottom:6px;}
+  .vitrine-card p{color:var(--ink-soft);font-size:15px;}
+  @media (max-width:720px){
+    .vitrine-grid{grid-template-columns:1fr;}
+  }
 
   /* ---------- benefits ---------- */
-  .benefits{padding:88px 0;}
+  .benefits{padding:80px 0;}
   .benefit-grid{
     display:grid;
     grid-template-columns:repeat(4, 1fr);
@@ -410,106 +315,111 @@
   }
   .benefit-card{
     background:#fff;
-    border-radius:22px;
-    padding:30px 24px;
-    border:1px solid var(--line);
-    box-shadow:0 6px 20px rgba(62,58,54,0.05);
-    transition:transform .25s ease, box-shadow .25s ease;
+    padding:26px 22px;
+    border-top:4px solid var(--ink);
   }
-  .benefit-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 16px 30px rgba(62,58,54,0.1);
-  }
-  .icon-wrap{
-    width:56px;height:56px;
-    border-radius:16px;
-    display:flex;align-items:center;justify-content:center;
-    margin-bottom:18px;
-  }
-  .icon-wrap.c1{background:var(--pink);}
-  .icon-wrap.c2{background:var(--mint);}
-  .icon-wrap.c3{background:var(--yellow);}
-  .icon-wrap.c4{background:var(--peach);}
-  .benefit-card h3{font-size:19px;margin-bottom:8px;}
+  .benefit-card.c-age{border-top-color:var(--green);order:1;}
+  .benefit-card.c-print{border-top-color:var(--orange);order:2;}
+  .benefit-card.c-reuse{border-top-color:var(--red);order:3;}
+  .benefit-card.c-deliver{border-top-color:var(--ink);order:4;}
+  .icon-wrap{width:34px;height:34px;margin-bottom:16px;}
+  .benefit-card h3{margin-bottom:10px;}
   .benefit-card p{color:var(--ink-soft);font-size:15px;}
+  @media (max-width:900px){
+    .benefit-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:560px){
+    .benefit-grid{grid-template-columns:1fr;}
+    .benefit-card.c-deliver{order:1;}
+    .benefit-card.c-print{order:2;}
+    .benefit-card.c-age{order:3;}
+    .benefit-card.c-reuse{order:4;}
+  }
 
   /* ---------- how it works ---------- */
-  .how{
-    padding:88px 0;
-    background:var(--cream-2);
-    position:relative;
-    overflow:hidden;
-  }
-  .how-grid{
+  .how{padding:80px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .how-row{
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:32px;
-    position:relative;
+    grid-template-columns:1fr auto 1fr auto 1fr;
+    align-items:start;
+    gap:0 10px;
   }
-  .how-step{
-    text-align:center;
-    position:relative;
-    padding:0 12px;
-  }
+  .how-step{text-align:left;max-width:220px;}
   .how-number{
-    width:64px;height:64px;
-    margin:0 auto 20px;
+    width:44px;height:44px;
     border-radius:50%;
-    background:#fff;
-    border:3px solid var(--coral);
-    color:var(--coral-deep);
-    font-family:'Baloo 2', sans-serif;
+    background:var(--paper);
+    border:2px solid var(--ink);
+    color:var(--ink);
+    font-family:'Karla', sans-serif;
     font-weight:800;
-    font-size:24px;
+    font-size:18px;
     display:flex;align-items:center;justify-content:center;
-    box-shadow:var(--shadow);
+    margin-bottom:14px;
   }
-  .how-step h3{font-size:18px;margin-bottom:8px;}
+  .how-step h3{margin-bottom:6px;}
   .how-step p{color:var(--ink-soft);font-size:15px;}
-  .how-arrow{
-    position:absolute;
-    top:30px;
-    right:-26px;
-    color:var(--pink-deep);
-    display:block;
+  .stitch-wrap{
+    align-self:center;
+    width:64px;
+    padding-top:20px;
   }
-  .how-step:last-child .how-arrow{display:none;}
+  .stitch-wrap svg path{
+    stroke-dasharray:140;
+    stroke-dashoffset:140;
+  }
+  .stitch-wrap.stitched svg path{
+    transition:stroke-dashoffset 1.1s ease;
+    stroke-dashoffset:0;
+  }
+  @media (prefers-reduced-motion: reduce){
+    .stitch-wrap svg path{stroke-dashoffset:0 !important;transition:none !important;}
+  }
+  @media (max-width:800px){
+    .how-row{grid-template-columns:1fr;justify-items:start;gap:24px;}
+    .stitch-wrap{display:none;}
+  }
+
+  /* ---------- guarantee band ---------- */
+  .guarantee{
+    background:var(--ink);
+    color:#fff;
+    padding:36px 0;
+  }
+  .guarantee .wrap{
+    display:flex;
+    align-items:center;
+    gap:18px;
+  }
+  .guarantee svg{flex:none;}
+  .guarantee p{font-size:16px;line-height:1.6;}
+  .guarantee strong{color:#fff;}
+  @media (max-width:600px){
+    .guarantee .wrap{flex-direction:column;align-items:flex-start;}
+  }
 
   /* ---------- final cta ---------- */
-  .final-cta{
-    padding:100px 0 120px;
-    text-align:center;
-    position:relative;
-    overflow:hidden;
-  }
-  .final-cta h2{
-    font-size:clamp(28px, 4vw, 42px);
-    max-width:620px;
-    margin:0 auto;
-  }
-  .final-cta p{
-    margin-top:16px;
-    color:var(--ink-soft);
-    font-size:18px;
-  }
-  .final-cta .btn{margin-top:32px;}
+  .final-cta{padding:88px 0 120px;text-align:center;}
+  .final-cta h2{max-width:600px;margin:0 auto;}
+  .final-cta p.lede{margin-top:16px;color:var(--ink-soft);font-size:18px;}
   .price-tag{
     display:inline-flex;
     align-items:baseline;
-    gap:6px;
-    margin-top:22px;
-    font-family:'Baloo 2', sans-serif;
+    gap:8px;
+    margin-top:24px;
+    font-family:'Schoolbell', cursive;
   }
-  .price-tag .big{font-size:44px;font-weight:800;color:var(--coral-deep);}
-  .price-tag .small{font-size:16px;color:var(--ink-soft);font-weight:600;}
+  .price-tag .big{font-size:46px;color:var(--red);}
+  .price-tag .small{font-size:15px;color:var(--ink-soft);font-family:'Karla',sans-serif;font-weight:700;}
+  .final-cta .btn{margin-top:28px;font-size:19px;padding:19px 38px;}
 
   footer{
-    padding:32px 24px 100px;
+    padding:28px 24px 110px;
     text-align:center;
     color:var(--ink-soft);
     font-size:14px;
+    border-top:1px solid var(--line);
   }
-  footer a{text-decoration:underline;}
 
   /* ---------- sticky mobile cta ---------- */
   .sticky-cta{
@@ -523,141 +433,148 @@
     align-items:center;
     justify-content:space-between;
     gap:12px;
-    box-shadow:0 -8px 24px rgba(62,58,54,0.08);
+    box-shadow:0 -6px 18px rgba(42,36,32,0.08);
     transform:translateY(110%);
-    transition:transform .35s ease;
+    transition:transform .3s ease;
   }
   .sticky-cta.show{transform:translateY(0);}
-  .sticky-cta .info strong{display:block;font-family:'Baloo 2', sans-serif;font-size:15px;}
-  .sticky-cta .info span{font-size:12.5px;color:var(--ink-soft);}
-  .sticky-cta .btn{padding:12px 20px;font-size:15px;box-shadow:0 5px 0 var(--coral-deep);}
+  .sticky-cta .info strong{display:block;font-family:'Schoolbell', cursive;font-size:17px;}
+  .sticky-cta .info span{font-size:12.5px;color:var(--ink-soft);font-weight:600;}
+  .sticky-cta .btn{padding:12px 20px;font-size:15px;box-shadow:0 3px 0 var(--red-dark);}
 
-  @media (max-width: 900px){
+  @media (max-width:900px){
     .hero-grid{grid-template-columns:1fr;}
-    .hero-visual{order:-1;min-height:300px;margin-bottom:12px;}
-    .included-grid{grid-template-columns:1fr;}
-    .benefit-grid{grid-template-columns:1fr 1fr;}
-    .how-grid{grid-template-columns:1fr;gap:44px;}
-    .how-arrow{display:none;}
+    .hero-visual{order:-1;min-height:280px;margin-bottom:8px;}
     .sticky-cta{display:flex;}
     body{padding-bottom:0;}
   }
-  @media (max-width: 560px){
-    .benefit-grid{grid-template-columns:1fr;}
-    .page{width:210px;}
-    .header-cta{display:none;}
-    .hero{padding-top:36px;}
+  @media (max-width:520px){
+    .sheet{width:190px;}
+    .sheet-calligraphy{transform:rotate(-6deg) translate(-46px, 4px);}
+    .sheet-lace{transform:rotate(5deg) translate(42px, -8px);}
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="header-inner wrap" style="padding-left:0;padding-right:0;">
+  <div class="header-inner wrap">
     <div class="logo">
-      <span class="logo-mark">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 20C4 20 6 8 12 8C18 8 20 20 20 20" stroke="#2C6E56" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="5" r="2" fill="#2C6E56"/></svg>
-      </span>
-      Mundo Pequenino
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19c4-8 8-13 12-15M13 3l3 1-1 3" stroke="#C33E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Traço &amp; Linha
     </div>
-    <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn header-cta">Quero o meu</a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#vitrine">O que tem no PDF</a>
+      <a href="#como-funciona">Como funciona</a>
+    </nav>
+    <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn header-cta cta-track">Comprar agora</a>
   </div>
 </header>
 
 <section class="hero">
-  <svg class="blob" style="top:-60px; left:-120px; width:420px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <path fill="var(--mint)" d="M46.5,-58.5C60.6,-49.7,72.6,-36.4,76.9,-21.2C81.2,-6,77.7,11.1,69.9,25.3C62.1,39.5,50,50.7,36.1,59.4C22.2,68.1,6.5,74.3,-9.6,74.9C-25.7,75.6,-42.1,70.7,-53.6,60.1C-65.1,49.4,-71.6,32.9,-74.6,15.9C-77.6,-1.2,-77.1,-18.9,-68.9,-31.9C-60.7,-44.9,-44.8,-53.3,-29.9,-61.6C-15,-70,-1,-78.3,12.4,-77.4C25.8,-76.5,33,-67.3,46.5,-58.5Z" transform="translate(100 100)" opacity="0.55"/>
-  </svg>
-  <svg class="blob" style="top:120px; right:-140px; width:380px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <path fill="var(--pink)" d="M40.1,-51.9C51.4,-43.4,59.5,-30.1,63.8,-15.5C68.1,-0.9,68.6,15,62.5,27.8C56.4,40.6,43.7,50.3,29.7,57.2C15.7,64.1,0.4,68.2,-14.9,66.6C-30.2,65,-45.5,57.7,-55.9,45.6C-66.3,33.5,-71.8,16.7,-71.1,0.5C-70.4,-15.8,-63.5,-31.6,-52.4,-40.4C-41.3,-49.2,-26,-51,-11.1,-53.8C3.8,-56.6,28.8,-60.4,40.1,-51.9Z" transform="translate(100 100)" opacity="0.5"/>
-  </svg>
-
   <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow reveal">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9H21.5L15.8 13.2L18 20L12 15.8L6 20L8.2 13.2L2.5 9H9.5L12 2Z" fill="#2C6E56"/></svg>
-        Pronto pra imprimir hoje
-      </span>
-      <h1 class="reveal reveal-delay-1">Atividades prontas pra imprimir, <span>sem precisar criar nada.</span></h1>
-      <p class="hero-sub reveal reveal-delay-2">Um PDF com folhas de caligrafia e alinhavo pra crianças pequenas. Você baixa, imprime e já usa — em casa ou na sala de aula, hoje mesmo.</p>
-      <div class="hero-actions reveal reveal-delay-3">
-        <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn">Baixar agora <span class="btn-price">R$10</span></a>
-        <a href="#incluso" class="btn btn-ghost">Ver o que vem no PDF</a>
+    <div class="hero-copy hero-story" id="heroStory">
+      <h1 class="hs-3">30 atividades de caligrafia e alinhavo, prontas pra imprimir agora.</h1>
+      <p class="hero-sub hs-4">Um PDF com folhas de traçado e alinhavo para crianças de 3 a 6 anos — feito pra mães, pais e professoras que não têm tempo de criar material do zero.</p>
+      <div class="hero-actions hs-5">
+        <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn cta-track">Comprar agora — R$10</a>
       </div>
-      <div class="hero-trust reveal reveal-delay-4">
-        <div class="hero-trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8FBF9F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Entrega imediata
-        </div>
-        <div class="hero-trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8FBF9F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Impressão ilimitada
-        </div>
-        <div class="hero-trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8FBF9F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Formato A4
-        </div>
+      <div class="hero-trust hs-6">
+        <span>30+ atividades</span>
+        <span>Formato A4</span>
+        <span>Entrega por e-mail</span>
       </div>
     </div>
 
-    <div class="hero-visual reveal reveal-delay-2">
-      <div class="page page-back"></div>
-      <div class="page page-mid"></div>
-      <div class="page page-front">
-        <span class="tag">Caligrafia</span>
-        <div class="trace-line"></div>
-        <div class="trace-line" style="opacity:.75"></div>
-        <div class="trace-line" style="opacity:.5"></div>
-        <div style="height:1px;background:var(--line);margin:6px 0;"></div>
-        <span class="tag" style="background:var(--mint);color:#2C6E56;">Alinhavo</span>
-        <div class="sew-row">
-          <div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div>
-          <div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div>
+    <div class="hero-visual">
+      <svg class="paperclip" viewBox="0 0 44 70" fill="none" aria-hidden="true">
+        <path d="M14 12v36a8 8 0 0 0 16 0V16a5 5 0 0 0-10 0v30a2 2 0 0 0 4 0V20" stroke="#5B5449" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+
+      <div class="sheet sheet-calligraphy hs-1" aria-hidden="true">
+        <div class="ruled-label">Alfabeto</div>
+        <div class="ruled-row hs-2">
+          <svg viewBox="0 0 210 34" preserveAspectRatio="none">
+            <line x1="4" y1="4" x2="206" y2="4" stroke="#D8D0C0" stroke-width="1.5"/>
+            <line x1="4" y1="17" x2="206" y2="17" stroke="#D8D0C0" stroke-width="1.5" stroke-dasharray="4 4"/>
+            <line x1="4" y1="30" x2="206" y2="30" stroke="#D8D0C0" stroke-width="1.5"/>
+            <path d="M14 30 C14 12, 30 12, 30 21 C30 30, 14 30, 30 4" fill="none" stroke="#C33E2E" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="120" stroke-dashoffset="120"/>
+          </svg>
         </div>
-        <div class="sew-row">
-          <div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div><div class="sew-dot"></div>
-          <div class="sew-dot"></div><div class="sew-dot"></div>
+        <div class="ruled-row" style="opacity:.65">
+          <svg viewBox="0 0 210 34" preserveAspectRatio="none">
+            <line x1="4" y1="4" x2="206" y2="4" stroke="#D8D0C0" stroke-width="1.5"/>
+            <line x1="4" y1="17" x2="206" y2="17" stroke="#D8D0C0" stroke-width="1.5" stroke-dasharray="4 4"/>
+            <line x1="4" y1="30" x2="206" y2="30" stroke="#D8D0C0" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="ruled-row" style="opacity:.4">
+          <svg viewBox="0 0 210 34" preserveAspectRatio="none">
+            <line x1="4" y1="4" x2="206" y2="4" stroke="#D8D0C0" stroke-width="1.5"/>
+            <line x1="4" y1="17" x2="206" y2="17" stroke="#D8D0C0" stroke-width="1.5" stroke-dasharray="4 4"/>
+            <line x1="4" y1="30" x2="206" y2="30" stroke="#D8D0C0" stroke-width="1.5"/>
+          </svg>
         </div>
       </div>
-      <div class="float-badge badge-top">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" stroke="#F0714A" stroke-width="1.8"/><path d="M14 2v6h6" stroke="#F0714A" stroke-width="1.8"/></svg>
-        PDF pronto
-      </div>
-      <div class="float-badge badge-bottom">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#2C6E56" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 9V4h12v5" stroke="#2C6E56" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Imprima na hora
+
+      <div class="tape" aria-hidden="true"></div>
+      <div class="sheet sheet-lace" aria-hidden="true">
+        <div class="lace-label">Alinhavo</div>
+        <svg width="150" height="150" viewBox="0 0 150 150" fill="none">
+          <circle cx="75" cy="20" r="4" fill="none" stroke="#B85F16" stroke-width="1.6" stroke-dasharray="2 3"/>
+          <circle cx="118" cy="45" r="4" fill="none" stroke="#B85F16" stroke-width="1.6" stroke-dasharray="2 3"/>
+          <circle cx="118" cy="100" r="4" fill="none" stroke="#B85F16" stroke-width="1.6" stroke-dasharray="2 3"/>
+          <circle cx="75" cy="128" r="4" fill="none" stroke="#B85F16" stroke-width="1.6" stroke-dasharray="2 3"/>
+          <circle cx="32" cy="100" r="4" fill="none" stroke="#B85F16" stroke-width="1.6" stroke-dasharray="2 3"/>
+          <circle cx="32" cy="45" r="4" fill="none" stroke="#B85F16" stroke-width="1.6" stroke-dasharray="2 3"/>
+          <path d="M75 20L118 45M118 45 L118 100M118 100 L75 128" stroke="#C33E2E" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/>
+        </svg>
       </div>
     </div>
   </div>
 </section>
 
-<section class="included" id="incluso">
-  <div class="wrap included-grid">
-    <div class="stack-mock reveal">
-      <div class="stack-page s1"></div>
-      <div class="stack-page s4"></div>
-      <div class="stack-page s2"></div>
-      <div class="stack-page s3"></div>
+<section class="vitrine" id="vitrine">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>O que vem dentro do PDF</h2>
+      <p>Trinta e poucas folhas, cada uma trabalhando uma habilidade diferente.</p>
     </div>
-    <div>
-      <span class="section-eyebrow reveal">O que vem no PDF</span>
-      <h2 class="reveal reveal-delay-1" style="margin-bottom:22px;">Tudo o que você precisa pra sentar a criança e começar.</h2>
-      <div class="included-list">
-        <div class="included-item reveal reveal-delay-1">
-          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><strong>Folhas de caligrafia</strong><span>Alfabeto completo em maiúsculas e minúsculas, com linhas-guia para treinar o traçado.</span></div>
+    <div class="vitrine-grid">
+      <div class="vitrine-card">
+        <div class="vitrine-thumb">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19c4-8 8-13 12-15M13 3l3 1-1 3" stroke="#3F7D4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <div class="included-item reveal reveal-delay-2">
-          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><strong>Folhas de alinhavo</strong><span>Formas, animais e números com contorno pontilhado, prontos para furar e costurar com barbante.</span></div>
+        <div>
+          <h3>Alfabeto</h3>
+          <p>Traçado das letras maiúsculas e minúsculas — trabalha reconhecimento e coordenação motora fina.</p>
         </div>
-        <div class="included-item reveal reveal-delay-3">
-          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><strong>Formato A4, alta resolução</strong><span>Feito para imprimir em casa ou na escola sem perder qualidade.</span></div>
+      </div>
+      <div class="vitrine-card">
+        <div class="vitrine-thumb">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 8h4M6 12h6M6 16h3" stroke="#3F7D4E" stroke-width="2" stroke-linecap="round"/><path d="M15 6l3 3-3 3M15 15l3 3-3 3" stroke="#3F7D4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <div class="included-item reveal reveal-delay-4">
-          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><strong>Uso livre e ilimitado</strong><span>Imprima quantas vezes quiser, para um filho, uma turma inteira ou os próximos anos.</span></div>
+        <div>
+          <h3>Números e sílabas</h3>
+          <p>Sequência numérica e primeiras junções de sílabas — trabalha contagem e leitura inicial.</p>
+        </div>
+      </div>
+      <div class="vitrine-card">
+        <div class="vitrine-thumb">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="#E8791E" stroke-width="1.8" stroke-dasharray="2 3"/><path d="M6 12h12" stroke="#C33E2E" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 4"/></svg>
+        </div>
+        <div>
+          <h3>Alinhavo de formas</h3>
+          <p>Furar e passar o barbante pelo contorno — trabalha controle de pinça e coordenação motora.</p>
+        </div>
+      </div>
+      <div class="vitrine-card">
+        <div class="vitrine-thumb">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4c-4 0-6 3-6 6 0 4 4 6 6 9 2-3 6-5 6-9 0-3-2-6-6-6Z" fill="none" stroke="#E8791E" stroke-width="1.8" stroke-dasharray="2 3"/></svg>
+        </div>
+        <div>
+          <h3>Alinhavo de bichinhos</h3>
+          <p>Formas de animais e frutas para costurar do início ao fim — trabalha concentração e sequência.</p>
         </div>
       </div>
     </div>
@@ -667,123 +584,146 @@
 <section class="benefits">
   <div class="wrap">
     <div class="section-head">
-      <span class="section-eyebrow reveal">Por que vale a pena</span>
-      <h2 class="reveal reveal-delay-1">Menos trabalho pra você, mais desenvolvimento pra criança.</h2>
+      <h2>As perguntas que você provavelmente tem</h2>
     </div>
     <div class="benefit-grid">
-      <div class="benefit-card reveal">
-        <div class="icon-wrap c1">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1Z" stroke="#B5474F" stroke-width="1.8" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Pronto em segundos</h3>
-        <p>Sem montar apostila, sem procurar molde. Abriu o PDF, já pode imprimir.</p>
+      <div class="benefit-card c-age">
+        <div class="icon-wrap"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-4.6-9-9C1.5 8 3.5 4.5 7 4.5c2 0 3.5 1.2 5 3.2 1.5-2 3-3.2 5-3.2 3.5 0 5.5 3.5 4 7.5-2 4.4-9 9-9 9Z" stroke="#3F7D4E" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <h3>Para qual idade é?</h3>
+        <p>Pensado para crianças de 3 a 6 anos — dos primeiros traços livres até a escrita guiada das letras.</p>
       </div>
-      <div class="benefit-card reveal reveal-delay-1">
-        <div class="icon-wrap c2">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.5-8.5C.7 8.6 3 5 6.5 5c2 0 3.3 1 5.5 3 2.2-2 3.5-3 5.5-3C21 5 23.3 8.6 21.5 12.5 19 16.65 12 21 12 21Z" stroke="#2C6E56" stroke-width="1.8"/></svg>
-        </div>
-        <h3>Desenvolvimento de verdade</h3>
-        <p>Atividades pensadas para coordenação motora, atenção e traçado das letras.</p>
+      <div class="benefit-card c-print">
+        <div class="icon-wrap"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2M6 14h12v7H6v-7Z" stroke="#E8791E" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <h3>Posso imprimir em casa?</h3>
+        <p>Sim. Os arquivos saem prontos em 300dpi, testados em impressora jato de tinta doméstica e também em gráfica, sem perder nitidez do traço.</p>
       </div>
-      <div class="benefit-card reveal reveal-delay-2">
-        <div class="icon-wrap c3">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#A9822F" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="#A9822F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Economiza seu tempo</h3>
-        <p>Nada de garimpar atividade grátis solta na internet ou inventar do zero.</p>
+      <div class="benefit-card c-reuse">
+        <div class="icon-wrap"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="3" stroke="#C33E2E" stroke-width="1.8"/><circle cx="17" cy="9" r="2.4" stroke="#C33E2E" stroke-width="1.8"/><path d="M2.5 19c.6-3.4 2.9-5 5.5-5s4.9 1.6 5.5 5M14.5 19c.4-2.3 1.7-3.7 3.5-4.1" stroke="#C33E2E" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <h3>Dá pra usar com mais de uma criança?</h3>
+        <p>Dá. É um arquivo digital de uso pessoal ilimitado — imprima de novo para o próximo filho, a próxima turma, quantas vezes quiser.</p>
       </div>
-      <div class="benefit-card reveal reveal-delay-3">
-        <div class="icon-wrap c4">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#B06B2E" stroke-width="1.8"/><path d="M12 8v8M9.5 10c0-1.1 1.1-2 2.5-2s2.5.9 2.5 2-1.1 1.5-2.5 1.5-2.5.4-2.5 1.5 1.1 2 2.5 2 2.5-.9 2.5-2" stroke="#B06B2E" stroke-width="1.6" stroke-linecap="round"/></svg>
-        </div>
-        <h3>Custa menos que um lanche</h3>
-        <p>Por R$10 você usa quantas vezes quiser, com um filho ou com a turma toda.</p>
+      <div class="benefit-card c-deliver">
+        <div class="icon-wrap"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5" stroke="#2A2420" stroke-width="1.8"/><path d="M3.5 6l8.5 7 8.5-7" stroke="#2A2420" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Como recebo o material?</h3>
+        <p>Um PDF enviado direto por e-mail depois da confirmação do pagamento — sem aplicativo, sem cadastro, sem esperar correio.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="how">
-  <svg class="blob" style="bottom:-100px; left:40%; width:340px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <path fill="var(--yellow)" d="M45,-55.6C57.9,-47.4,67.4,-33.1,71.1,-17.7C74.8,-2.3,72.7,14.2,64.9,27.7C57.1,41.2,43.6,51.7,28.9,58.6C14.2,65.5,-1.7,68.8,-17.1,66.1C-32.5,63.4,-47.4,54.7,-57.4,42C-67.4,29.3,-72.5,12.6,-71.4,-3.5C-70.3,-19.6,-63,-35.1,-51.4,-43.6C-39.8,-52.1,-23.9,-53.6,-8.4,-56.5C7.1,-59.4,32.1,-63.8,45,-55.6Z" transform="translate(100 100)" opacity="0.45"/>
-  </svg>
-  <div class="wrap" style="position:relative;">
+<section class="how" id="como-funciona">
+  <div class="wrap">
     <div class="section-head">
-      <span class="section-eyebrow reveal">Como funciona</span>
-      <h2 class="reveal reveal-delay-1">Três passos e já está imprimindo.</h2>
+      <h2>Como funciona</h2>
+      <p>Três passos, do pagamento à impressora.</p>
     </div>
-    <div class="how-grid">
-      <div class="how-step reveal">
+    <div class="how-row" id="howRow">
+      <div class="how-step">
         <div class="how-number">1</div>
         <h3>Compra em poucos cliques</h3>
-        <p>Pagamento simples e rápido, sem cadastro complicado.</p>
-        <svg class="how-arrow" width="40" height="20" viewBox="0 0 40 20" fill="none"><path d="M1 10h34M28 3l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p>Pagamento simples, sem cadastro complicado.</p>
       </div>
-      <div class="how-step reveal reveal-delay-1">
+      <div class="stitch-wrap" aria-hidden="true">
+        <svg viewBox="0 0 64 20"><path d="M2 10h60" stroke="#C33E2E" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/></svg>
+      </div>
+      <div class="how-step">
         <div class="how-number">2</div>
-        <h3>Recebe o PDF na hora</h3>
-        <p>O material chega direto pra você baixar, sem espera.</p>
-        <svg class="how-arrow" width="40" height="20" viewBox="0 0 40 20" fill="none"><path d="M1 10h34M28 3l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Recebe o PDF no e-mail</h3>
+        <p>O material chega pronto pra baixar, sem espera.</p>
       </div>
-      <div class="how-step reveal reveal-delay-2">
+      <div class="stitch-wrap" aria-hidden="true">
+        <svg viewBox="0 0 64 20"><path d="M2 10h60" stroke="#C33E2E" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/></svg>
+      </div>
+      <div class="how-step">
         <div class="how-number">3</div>
-        <h3>Imprime e usa hoje</h3>
+        <h3>Imprime e começa hoje</h3>
         <p>É só colocar na impressora e chamar a criançada.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="final-cta" id="comprar">
-  <svg class="blob" style="top:-80px; left:-100px; width:360px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <path fill="var(--pink)" d="M46.5,-58.5C60.6,-49.7,72.6,-36.4,76.9,-21.2C81.2,-6,77.7,11.1,69.9,25.3C62.1,39.5,50,50.7,36.1,59.4C22.2,68.1,6.5,74.3,-9.6,74.9C-25.7,75.6,-42.1,70.7,-53.6,60.1C-65.1,49.4,-71.6,32.9,-74.6,15.9C-77.6,-1.2,-77.1,-18.9,-68.9,-31.9C-60.7,-44.9,-44.8,-53.3,-29.9,-61.6C-15,-70,-1,-78.3,12.4,-77.4C25.8,-76.5,33,-67.3,46.5,-58.5Z" transform="translate(100 100)" opacity="0.4"/>
-  </svg>
-  <div class="wrap" style="position:relative;">
-    <h2 class="reveal">Não precisa esperar pra amanhã. Baixe agora e já pode imprimir hoje.</h2>
-    <p class="reveal reveal-delay-1">Entrega automática, sem enrolação. Você paga, recebe o PDF e já senta com a criança.</p>
-    <div class="price-tag reveal reveal-delay-2">
+<section class="guarantee">
+  <div class="wrap">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="9" r="6" stroke="#fff" stroke-width="1.8"/><path d="M9 8.5l2 2 4-4M8 14l-1.5 6 5.5-2.5 5.5 2.5L16 14" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <p><strong>Qualidade de impressão garantida.</strong> Os arquivos saem em alta resolução (300dpi): o traço fica nítido tanto na impressora de casa quanto na gráfica do bairro.</p>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap">
+    <h2>Comprar agora — R$10</h2>
+    <p class="lede">O PDF chega pronto; o resto é só folha, lápis e linha.</p>
+    <div class="price-tag">
       <span class="big">R$10</span>
-      <span class="small">pagamento único</span>
+      <span class="small">pagamento único · entrega imediata</span>
     </div>
-    <div class="reveal reveal-delay-3">
-      <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn" id="cta-final">Quero o meu por R$10</a>
-      <p class="micro-note">Acesso imediato após a confirmação do pagamento.</p>
+    <div>
+      <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn cta-track">Comprar agora — R$10</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>Mundo Pequenino · Material digital para impressão · contato: seuemail@exemplo.com</p>
+  <p>Traço &amp; Linha · Atividades de caligrafia e alinhavo para impressão.</p>
 </footer>
 
 <div class="sticky-cta" id="stickyCta">
   <div class="info">
-    <strong>PDF de atividades</strong>
-    <span>Caligrafia + alinhavo</span>
+    <strong>Traço &amp; Linha</strong>
+    <span>Caligrafia + alinhavo · R$10</span>
   </div>
-  <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn">Baixar por R$10</a>
+  <a href="https://pay.cakto.com.br/brin8yf_1090629" target="_blank" rel="noopener" class="btn cta-track">Comprar agora</a>
 </div>
 
 <script>
-  const revealEls = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  revealEls.forEach(el => io.observe(el));
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const hero = document.querySelector('.hero');
-  const sticky = document.getElementById('stickyCta');
-  const heroWatcher = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      sticky.classList.toggle('show', !entry.isIntersecting);
+  // hero orchestrated entrance
+  var heroStory = document.getElementById('heroStory');
+  if (heroStory) requestAnimationFrame(function(){ heroStory.classList.add('play'); });
+
+  // sticky mobile cta appears once hero scrolls out
+  var hero = document.querySelector('.hero');
+  var sticky = document.getElementById('stickyCta');
+  if (hero && sticky && 'IntersectionObserver' in window){
+    var heroWatcher = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){ sticky.classList.toggle('show', !entry.isIntersecting); });
+    }, { threshold: 0 });
+    heroWatcher.observe(hero);
+  }
+
+  // single scroll moment: stitch line sews itself once "como funciona" is visible
+  var howRow = document.getElementById('howRow');
+  if (howRow && 'IntersectionObserver' in window){
+    var stitchWatcher = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          document.querySelectorAll('.stitch-wrap').forEach(function(el){ el.classList.add('stitched'); });
+          stitchWatcher.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    stitchWatcher.observe(howRow);
+  } else if (howRow) {
+    document.querySelectorAll('.stitch-wrap').forEach(function(el){ el.classList.add('stitched'); });
+  }
+
+  // stamp-mark click feedback on every CTA
+  if (!reduceMotion){
+    document.querySelectorAll('.cta-track').forEach(function(btn){
+      btn.addEventListener('click', function(e){
+        var rect = btn.getBoundingClientRect();
+        var mark = document.createElement('span');
+        mark.className = 'stamp-mark';
+        mark.style.left = (e.clientX - rect.left) + 'px';
+        mark.style.top = (e.clientY - rect.top) + 'px';
+        btn.appendChild(mark);
+        requestAnimationFrame(function(){ mark.classList.add('go'); });
+        setTimeout(function(){ mark.remove(); }, 550);
+      });
     });
-  }, { threshold: 0 });
-  heroWatcher.observe(hero);
+  }
 </script>
 
 </body>
