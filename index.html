@@ -30,27 +30,26 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
 <!-- End UTMify -->
 <style>
   :root{
-    --cream:#FFFBF2;
-    --cream-2:#FFF4E3;
-    --ink:#3E3A36;
-    --ink-soft:#6B6560;
-    --pink:#FFD3D8;
-    --pink-deep:#F4A6B0;
-    --mint:#CFEFE1;
-    --mint-deep:#8FD3B9;
-    --yellow:#FFE9A8;
-    --peach:#FFD9B0;
-    --coral:#F0714A;
-    --coral-deep:#D95F39;
-    --line:#EADFD0;
-    --shadow: 0 10px 30px rgba(62,58,54,0.08);
+    --white:#FFFFFF;
+    --ink:#1A1A1A;
+    --ink-soft:#555555;
+    --red:#EF3B36;
+    --red-deep:#C42420;
+    --orange:#FF6A1A;
+    --orange-deep:#E4540A;
+    --green:#1FA463;
+    --green-deep:#128049;
+    --yellow:#FFC229;
+    --yellow-deep:#E8A800;
+    --line:#EAEAEA;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
   }
 
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
     margin:0;
-    background:var(--cream);
+    background:var(--white);
     color:var(--ink);
     font-family:'Manrope', sans-serif;
     font-size:17px;
@@ -96,7 +95,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     justify-content:center;
     gap:10px;
     padding:17px 34px;
-    background:var(--coral);
+    background:var(--orange);
     color:#fff;
     font-family:'Fredoka', sans-serif;
     font-weight:700;
@@ -104,17 +103,17 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     border:none;
     border-radius:14px;
     cursor:pointer;
-    box-shadow:0 8px 0 var(--coral-deep), 0 14px 24px rgba(217,95,57,0.28);
+    box-shadow:0 8px 0 var(--orange-deep), 0 14px 24px rgba(228,84,10,0.28);
     transition:transform .18s ease, box-shadow .18s ease;
     white-space:nowrap;
   }
   .btn:hover{
     transform:translateY(-3px) scale(1.03);
-    box-shadow:0 11px 0 var(--coral-deep), 0 18px 30px rgba(217,95,57,0.32);
+    box-shadow:0 11px 0 var(--orange-deep), 0 18px 30px rgba(228,84,10,0.32);
   }
   .btn:active{
     transform:translateY(2px) scale(1);
-    box-shadow:0 5px 0 var(--coral-deep), 0 8px 16px rgba(217,95,57,0.28);
+    box-shadow:0 5px 0 var(--orange-deep), 0 8px 16px rgba(228,84,10,0.28);
   }
   .btn-price{
     font-family:'Manrope', sans-serif;
@@ -127,13 +126,13 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
   .btn-ghost{
     background:transparent;
     box-shadow:none;
-    color:var(--coral-deep);
-    border:2px solid var(--coral);
+    color:var(--orange-deep);
+    border:2px solid var(--orange);
     padding:15px 30px;
   }
   .btn-ghost:hover{
     transform:translateY(-2px) scale(1.03);
-    box-shadow:0 8px 18px rgba(217,95,57,0.15);
+    box-shadow:0 8px 18px rgba(228,84,10,0.15);
   }
 
   .micro-note{
@@ -147,7 +146,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     position:sticky;
     top:0;
     z-index:50;
-    background:rgba(255,251,242,0.85);
+    background:rgba(255,255,255,0.85);
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--line);
   }
@@ -169,16 +168,16 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
   .logo-mark{
     width:36px;height:36px;
     border-radius:10px;
-    background:var(--mint);
+    background:var(--green);
     display:flex;align-items:center;justify-content:center;
     transform:rotate(-6deg);
   }
   .header-cta{
     padding:11px 22px;
     font-size:15px;
-    box-shadow:0 5px 0 var(--coral-deep);
+    box-shadow:0 5px 0 var(--orange-deep);
   }
-  .header-cta:hover{box-shadow:0 7px 0 var(--coral-deep);}
+  .header-cta:hover{box-shadow:0 7px 0 var(--orange-deep);}
 
   /* ---------- hero ---------- */
   .hero{
@@ -186,12 +185,6 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     position:relative;
     overflow:hidden;
     text-align:center;
-  }
-  .blob{
-    position:absolute;
-    filter:blur(0px);
-    z-index:0;
-    opacity:0.9;
   }
   .hero-grid{
     display:flex;
@@ -212,8 +205,8 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     display:inline-flex;
     align-items:center;
     gap:8px;
-    background:var(--mint);
-    color:#2C6E56;
+    background:var(--green);
+    color:#fff;
     font-weight:800;
     font-size:13.5px;
     letter-spacing:.02em;
@@ -306,7 +299,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
   .section-eyebrow{
     font-family:'Fredoka', sans-serif;
     font-weight:700;
-    color:var(--coral-deep);
+    color:var(--red);
     font-size:15px;
     margin-bottom:10px;
     display:block;
@@ -349,7 +342,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     flex:none;
     width:24px;height:24px;
     border-radius:8px;
-    background:var(--pink);
+    background:var(--red);
     display:flex;align-items:center;justify-content:center;
   }
   .solution-box{
@@ -380,7 +373,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     flex:none;
     width:24px;height:24px;
     border-radius:8px;
-    background:var(--mint);
+    background:var(--green);
     display:flex;align-items:center;justify-content:center;
   }
   .included-item span{color:var(--ink-soft); font-size:15px;}
@@ -388,7 +381,9 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
   /* ---------- o que é a oferta ---------- */
   .oferta-info{
     padding:80px 0;
-    background:var(--cream-2);
+    background:var(--white);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
     text-align:center;
   }
   .oferta-info h2{font-size:clamp(26px, 3.4vw, 36px); max-width:680px; margin:0 auto;}
@@ -412,6 +407,9 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
   }
   .chip:nth-child(odd){transform:rotate(-1.2deg);}
   .chip:nth-child(even){transform:rotate(1deg);}
+  .chip:nth-child(3n+1){border-color:var(--red); color:var(--red-deep);}
+  .chip:nth-child(3n+2){border-color:var(--orange); color:var(--orange-deep);}
+  .chip:nth-child(3n){border-color:var(--green); color:var(--green-deep);}
 
   /* ---------- what's included (modules) ---------- */
   .included{
@@ -453,7 +451,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
   .module-card p{color:var(--ink-soft); font-size:15px;}
 
   /* ---------- benefits ---------- */
-  .benefits{padding:88px 0; background:var(--cream-2);}
+  .benefits{padding:88px 0; background:var(--white); border-top:1px solid var(--line);}
   .benefit-grid{
     display:grid;
     grid-template-columns:repeat(4, 1fr);
@@ -479,10 +477,10 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     display:flex;align-items:center;justify-content:center;
     margin-bottom:18px;
   }
-  .icon-wrap.c1{background:var(--pink);}
-  .icon-wrap.c2{background:var(--mint);}
-  .icon-wrap.c3{background:var(--yellow);}
-  .icon-wrap.c4{background:var(--peach);}
+  .icon-wrap.c1{background:var(--red);}
+  .icon-wrap.c2{background:var(--green);}
+  .icon-wrap.c3{background:var(--orange);}
+  .icon-wrap.c4{background:var(--yellow);}
   .benefit-card h3{font-size:19px;margin-bottom:8px;}
   .benefit-card p{color:var(--ink-soft);font-size:15px;}
 
@@ -514,7 +512,8 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
   .oferta-preco{
     padding:90px 0 100px;
     text-align:center;
-    background:var(--cream-2);
+    background:var(--white);
+    border-top:1px solid var(--line);
     position:relative;
     overflow:hidden;
   }
@@ -542,7 +541,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     margin-top:8px;
     font-family:'Fredoka', sans-serif;
   }
-  .price-tag .big{font-size:48px;font-weight:700;color:var(--coral-deep);}
+  .price-tag .big{font-size:48px;font-weight:700;color:var(--red);}
   .price-tag .small{font-size:16px;color:var(--ink-soft);font-weight:600;}
 
   /* ---------- garantia ---------- */
@@ -554,7 +553,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     width:88px;height:88px;
     margin:0 auto 22px;
     border-radius:22%;
-    background:var(--mint);
+    background:var(--green);
     display:flex;align-items:center;justify-content:center;
     box-shadow:var(--shadow);
     transform:rotate(-4deg);
@@ -584,7 +583,8 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
   /* ---------- faq ---------- */
   .faq{
     padding:80px 0 110px;
-    background:var(--cream-2);
+    background:var(--white);
+    border-top:1px solid var(--line);
   }
   .faq-list{
     max-width:720px;
@@ -615,7 +615,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
   .faq-item summary::after{
     content:"+";
     font-size:24px;
-    color:var(--coral);
+    color:var(--orange);
     flex:none;
     transition:transform .2s ease;
   }
@@ -653,7 +653,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
   .sticky-cta.show{transform:translateY(0);}
   .sticky-cta .info strong{display:block;font-family:'Fredoka', sans-serif;font-size:15px;}
   .sticky-cta .info span{font-size:12.5px;color:var(--ink-soft);}
-  .sticky-cta .btn{padding:12px 20px;font-size:15px;box-shadow:0 5px 0 var(--coral-deep);}
+  .sticky-cta .btn{padding:12px 20px;font-size:15px;box-shadow:0 5px 0 var(--orange-deep);}
 
   @media (max-width: 900px){
     .dor-grid{grid-template-columns:1fr;}
@@ -677,7 +677,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
   <div class="header-inner wrap" style="padding-left:0;padding-right:0;">
     <div class="logo">
       <span class="logo-mark">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 20C4 20 6 8 12 8C18 8 20 20 20 20" stroke="#2C6E56" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="5" r="2" fill="#2C6E56"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 20C4 20 6 8 12 8C18 8 20 20 20 20" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="5" r="2" fill="#fff"/></svg>
       </span>
       Mundo Pequenino
     </div>
@@ -686,17 +686,10 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
 </header>
 
 <section class="hero">
-  <svg class="blob" style="top:-60px; left:-120px; width:420px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <path fill="var(--mint)" d="M46.5,-58.5C60.6,-49.7,72.6,-36.4,76.9,-21.2C81.2,-6,77.7,11.1,69.9,25.3C62.1,39.5,50,50.7,36.1,59.4C22.2,68.1,6.5,74.3,-9.6,74.9C-25.7,75.6,-42.1,70.7,-53.6,60.1C-65.1,49.4,-71.6,32.9,-74.6,15.9C-77.6,-1.2,-77.1,-18.9,-68.9,-31.9C-60.7,-44.9,-44.8,-53.3,-29.9,-61.6C-15,-70,-1,-78.3,12.4,-77.4C25.8,-76.5,33,-67.3,46.5,-58.5Z" transform="translate(100 100)" opacity="0.55"/>
-  </svg>
-  <svg class="blob" style="top:120px; right:-140px; width:380px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <path fill="var(--pink)" d="M40.1,-51.9C51.4,-43.4,59.5,-30.1,63.8,-15.5C68.1,-0.9,68.6,15,62.5,27.8C56.4,40.6,43.7,50.3,29.7,57.2C15.7,64.1,0.4,68.2,-14.9,66.6C-30.2,65,-45.5,57.7,-55.9,45.6C-66.3,33.5,-71.8,16.7,-71.1,0.5C-70.4,-15.8,-63.5,-31.6,-52.4,-40.4C-41.3,-49.2,-26,-51,-11.1,-53.8C3.8,-56.6,28.8,-60.4,40.1,-51.9Z" transform="translate(100 100)" opacity="0.5"/>
-  </svg>
-
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <span class="eyebrow reveal">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9H21.5L15.8 13.2L18 20L12 15.8L6 20L8.2 13.2L2.5 9H9.5L12 2Z" fill="#2C6E56"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9H21.5L15.8 13.2L18 20L12 15.8L6 20L8.2 13.2L2.5 9H9.5L12 2Z" fill="#fff"/></svg>
         Pronto pra imprimir hoje
       </span>
       <h1 class="reveal reveal-delay-1">Enquanto seu filho brinca, ele também pode <span>aprender a escrever.</span></h1>
@@ -707,15 +700,15 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
       </div>
       <div class="hero-trust reveal reveal-delay-4">
         <div class="hero-trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8FBF9F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#1FA463" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Entrega imediata
         </div>
         <div class="hero-trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8FBF9F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#1FA463" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Impressão ilimitada
         </div>
         <div class="hero-trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8FBF9F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#1FA463" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Garantia de 7 dias
         </div>
       </div>
@@ -724,11 +717,11 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     <div class="hero-visual reveal reveal-delay-2">
       <img src="assets/capa-caderno-caligrafia.jpg" alt="Capa do Caderno de Atividades de Caligrafia">
       <div class="float-badge badge-top">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" stroke="#F0714A" stroke-width="1.8"/><path d="M14 2v6h6" stroke="#F0714A" stroke-width="1.8"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" stroke="#FF6A1A" stroke-width="1.8"/><path d="M14 2v6h6" stroke="#FF6A1A" stroke-width="1.8"/></svg>
         PDF pronto
       </div>
       <div class="float-badge badge-bottom">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#2C6E56" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 9V4h12v5" stroke="#2C6E56" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#1FA463" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 9V4h12v5" stroke="#1FA463" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Imprima na hora
       </div>
     </div>
@@ -742,15 +735,15 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
       <p>Ou a "atividade de caligrafia" em casa vira só repetir a mesma letra até cansar — sem graça, sem vontade de continuar, e no fim ninguém aprende nada.</p>
       <div class="pain-list">
         <div class="pain-item">
-          <span class="pain-x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#D95F39" stroke-width="2.6" stroke-linecap="round"/></svg></span>
+          <span class="pain-x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg></span>
           Atividade repetitiva, sempre a mesma letra, sem graça nenhuma
         </div>
         <div class="pain-item">
-          <span class="pain-x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#D95F39" stroke-width="2.6" stroke-linecap="round"/></svg></span>
+          <span class="pain-x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg></span>
           Criança impaciente, larga o lápis nos primeiros minutos
         </div>
         <div class="pain-item">
-          <span class="pain-x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#D95F39" stroke-width="2.6" stroke-linecap="round"/></svg></span>
+          <span class="pain-x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg></span>
           Você sem tempo pra montar atividade nova toda semana
         </div>
       </div>
@@ -759,19 +752,19 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
       <strong>Com o Caderno de Caligrafia, você tem uma solução simples:</strong>
       <div class="included-list">
         <div class="included-item">
-          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <span>Atividades variadas que prendem a atenção — não é só repetir letra</span>
         </div>
         <div class="included-item">
-          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <span>Prática de sílabas e formação de palavras, passo a passo</span>
         </div>
         <div class="included-item">
-          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <span>Números de 0 a 9 e tabuada pra treinar junto</span>
         </div>
         <div class="included-item">
-          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <span>Atividades de contornar e colorir, pra tornar tudo mais leve</span>
         </div>
       </div>
@@ -804,28 +797,28 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     </div>
     <div class="module-grid">
       <div class="module-card reveal">
-        <div class="module-num" style="background:var(--coral);">1</div>
+        <div class="module-num" style="background:var(--red);">1</div>
         <div>
           <h3>Alfabeto completo</h3>
           <p>Todas as letras, maiúsculas e minúsculas, com linha-guia pra treinar o traçado do início ao fim.</p>
         </div>
       </div>
       <div class="module-card reveal reveal-delay-1">
-        <div class="module-num" style="background:#7A5FA0;">2</div>
+        <div class="module-num" style="background:var(--orange);">2</div>
         <div>
           <h3>Sílabas e formação de palavras</h3>
           <p>Atividades para juntar sílabas e montar as primeiras palavras, com dificuldade crescente.</p>
         </div>
       </div>
       <div class="module-card reveal reveal-delay-2">
-        <div class="module-num" style="background:#2C6E56;">3</div>
+        <div class="module-num" style="background:var(--green);">3</div>
         <div>
           <h3>Números e tabuada</h3>
           <p>Números de 0 a 9 para traçar e a tabuada pra praticar as primeiras continhas.</p>
         </div>
       </div>
       <div class="module-card reveal reveal-delay-3">
-        <div class="module-num" style="background:#B06B2E;">4</div>
+        <div class="module-num" style="background:var(--yellow-deep);">4</div>
         <div>
           <h3>Contornar e colorir</h3>
           <p>Atividades de tracejado e páginas pra colorir, pra variar a mecânica e manter o interesse da criança.</p>
@@ -844,28 +837,28 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     <div class="benefit-grid">
       <div class="benefit-card reveal">
         <div class="icon-wrap c1">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1Z" stroke="#B5474F" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg>
         </div>
         <h3>Desenvolve a escrita de verdade</h3>
         <p>Atividades pensadas para coordenação motora, atenção e traçado das letras.</p>
       </div>
       <div class="benefit-card reveal reveal-delay-1">
         <div class="icon-wrap c2">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.5-8.5C.7 8.6 3 5 6.5 5c2 0 3.3 1 5.5 3 2.2-2 3.5-3 5.5-3C21 5 23.3 8.6 21.5 12.5 19 16.65 12 21 12 21Z" stroke="#2C6E56" stroke-width="1.8"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.5-8.5C.7 8.6 3 5 6.5 5c2 0 3.3 1 5.5 3 2.2-2 3.5-3 5.5-3C21 5 23.3 8.6 21.5 12.5 19 16.65 12 21 12 21Z" stroke="#fff" stroke-width="1.8"/></svg>
         </div>
         <h3>Sem birra, sem cansaço</h3>
         <p>Mecânicas variadas evitam a repetição chata e mantêm a criança interessada.</p>
       </div>
       <div class="benefit-card reveal reveal-delay-2">
         <div class="icon-wrap c3">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#A9822F" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="#A9822F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#fff" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3>Economiza seu tempo</h3>
         <p>Nada de garimpar atividade grátis solta na internet ou inventar do zero.</p>
       </div>
       <div class="benefit-card reveal reveal-delay-3">
         <div class="icon-wrap c4">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#B06B2E" stroke-width="1.8"/><path d="M12 8v8M9.5 10c0-1.1 1.1-2 2.5-2s2.5.9 2.5 2-1.1 1.5-2.5 1.5-2.5.4-2.5 1.5 1.1 2 2.5 2 2.5-.9 2.5-2" stroke="#B06B2E" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#1A1A1A" stroke-width="1.8"/><path d="M12 8v8M9.5 10c0-1.1 1.1-2 2.5-2s2.5.9 2.5 2-1.1 1.5-2.5 1.5-2.5.4-2.5 1.5 1.1 2 2.5 2 2.5-.9 2.5-2" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round"/></svg>
         </div>
         <h3>Custa menos que um lanche</h3>
         <p>Por R$10 você usa quantas vezes quiser, com um filho ou com a turma toda.</p>
@@ -882,19 +875,19 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
     </div>
     <div class="quem-list">
       <div class="quem-item reveal">
-        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         Quer que o filho pratique caligrafia sem enjoar na segunda página
       </div>
       <div class="quem-item reveal reveal-delay-1">
-        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         É professor(a) de alfabetização e busca atividades prontas e variadas
       </div>
       <div class="quem-item reveal reveal-delay-2">
-        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         Quer reduzir o tempo de tela do filho com algo que realmente ensina
       </div>
       <div class="quem-item reveal reveal-delay-3">
-        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2C6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         Tem crianças em fase de alfabetização, mais ou menos entre 4 e 8 anos
       </div>
     </div>
@@ -902,9 +895,6 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
 </section>
 
 <section class="oferta-preco" id="comprar">
-  <svg class="blob" style="top:-90px; right:-120px; width:360px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <path fill="var(--yellow)" d="M45,-55.6C57.9,-47.4,67.4,-33.1,71.1,-17.7C74.8,-2.3,72.7,14.2,64.9,27.7C57.1,41.2,43.6,51.7,28.9,58.6C14.2,65.5,-1.7,68.8,-17.1,66.1C-32.5,63.4,-47.4,54.7,-57.4,42C-67.4,29.3,-72.5,12.6,-71.4,-3.5C-70.3,-19.6,-63,-35.1,-51.4,-43.6C-39.8,-52.1,-23.9,-53.6,-8.4,-56.5C7.1,-59.4,32.1,-63.8,45,-55.6Z" transform="translate(100 100)" opacity="0.4"/>
-  </svg>
   <div class="wrap" style="position:relative;">
     <span class="section-eyebrow reveal">Oferta</span>
     <h2 class="reveal reveal-delay-1" style="margin-bottom:32px;">Caderno de Atividades de Caligrafia — Pacote Completo</h2>
@@ -923,7 +913,7 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
 <section class="garantia">
   <div class="wrap">
     <div class="seal reveal">
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="transform:rotate(4deg);"><path d="M12 2l7 3v6c0 5-3.4 8.6-7 10-3.6-1.4-7-5-7-10V5l7-3Z" stroke="#2C6E56" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#2C6E56" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="transform:rotate(4deg);"><path d="M12 2l7 3v6c0 5-3.4 8.6-7 10-3.6-1.4-7-5-7-10V5l7-3Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
     <h2 class="reveal reveal-delay-1">Garantia incondicional de 7 dias</h2>
     <p class="reveal reveal-delay-2">Se você não gostar do material, devolvemos 100% do seu dinheiro. Simples assim, sem perguntas.</p>
@@ -931,9 +921,6 @@ src="https://www.facebook.com/tr?id=890502213453827&ev=PageView&noscript=1"
 </section>
 
 <section class="final-cta">
-  <svg class="blob" style="top:-80px; left:-100px; width:360px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <path fill="var(--pink)" d="M46.5,-58.5C60.6,-49.7,72.6,-36.4,76.9,-21.2C81.2,-6,77.7,11.1,69.9,25.3C62.1,39.5,50,50.7,36.1,59.4C22.2,68.1,6.5,74.3,-9.6,74.9C-25.7,75.6,-42.1,70.7,-53.6,60.1C-65.1,49.4,-71.6,32.9,-74.6,15.9C-77.6,-1.2,-77.1,-18.9,-68.9,-31.9C-60.7,-44.9,-44.8,-53.3,-29.9,-61.6C-15,-70,-1,-78.3,12.4,-77.4C25.8,-76.5,33,-67.3,46.5,-58.5Z" transform="translate(100 100)" opacity="0.4"/>
-  </svg>
   <div class="wrap" style="position:relative;">
     <h2 class="reveal">Seus filhos crescem rápido — o momento de aprender a escrever bem é agora.</h2>
     <p class="reveal reveal-delay-1">Baixe hoje o Caderno de Caligrafia e comece já essa semana a transformar o tempo livre da criança em aprendizado.</p>
